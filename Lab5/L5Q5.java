@@ -2,7 +2,7 @@ package Lab5;
 
 
 import java.util.*;
-import java.util.stream.IntStream;
+
 public class L5Q5 {
 	public static void main(String[] args) {
 		int[] arr = new Random().ints(20, 0, 100).toArray();
@@ -27,10 +27,10 @@ public class L5Q5 {
 		Arrays.sort(arr);
 
 		linearSearch(arr, x);
-		binarySearchPP(arr, x);
+		binarySearch(arr, x);
 	}
 	
-	public static void binarySearchPP(int[] arr, int x) {
+	public static void binarySearch(int[] arr, int x) {
 		int counter = 1, low = 0, mid = 0, high = arr.length - 1;
 		
 		while (low <= high) {
