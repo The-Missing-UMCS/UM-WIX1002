@@ -4,13 +4,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-/*
- * Question
- * Write a program that rotates 90 degrees clockwise a 3 by 3 matrix.
- * Sources for solution 2 & 3: https://www.geeksforgeeks.org/rotate-a-matrix-by-90-degree-in-clockwise-direction-without-using-any-extra-space/
- * Explanation for solution 2 & 3: https://github.com/fyiernzy/UM-WIX1002
- */
-
 public class L5Q4 {
 	public static void main(String[] args) {
 		int tmp, n;
@@ -70,10 +63,33 @@ public class L5Q4 {
 				arr[n - j - 1][i] = tmp;
 			}
 		}
+		
+		// Method credit to: https://github.com/LimJY03/WIX1002_UM/blob/main/Lab%2005/L5Q4.java
+		/*
+		Scanner sc = new Scanner(System.in);
+        String[][] matrix = new String[3][3];
+
+        for (int i = 2; i >= 0; i--) {
+            for (int j = 0; j < 3; j++) {
+                matrix[j][i] = sc.next();
+            }
+        }
+
+        String temp = String.join(
+                "\n",
+                String.join(" ", matrix[0]),
+                String.join(" ", matrix[1]),
+                String.join(" ", matrix[2])
+        );
+
+        System.out.println(temp);
+
+        sc.close();
+		 */
 	}
 	
-	  public static int[][] copy(int[][] src) {
-	      return Arrays.stream(src).map(int[]::clone).toArray(int[][]::new);
-	      // https://www.techiedelight.com/create-copy-of-2d-array-java/
-	   }
+	public static int[][] copy(int[][] src) {
+		return Arrays.stream(src).map(int[]::clone).toArray(int[][]::new);
+		// https://www.techiedelight.com/create-copy-of-2d-array-java/
+    }
 }

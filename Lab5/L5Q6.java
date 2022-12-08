@@ -22,6 +22,7 @@ public class L5Q6 {
 		}
 		
 		System.out.println("The Pascal Triangle with " + n + " row(s)");
+		
 		for(int i = 0; i < n; i++) {
 			for(int j = 0; j < n; j++) {
 				System.out.printf("%4d", arr[i][j]); // Default value of int[] is 0;
