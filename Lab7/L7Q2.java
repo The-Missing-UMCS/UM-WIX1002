@@ -13,10 +13,11 @@ public class L7Q2 {
 			 InputStream stream = connect.getInputStream();
 			 Scanner scanner = new Scanner(stream);
 			 
-			 PrintWriter writer = new PrintWriter("../index.htm");
+			 PrintWriter writer = new PrintWriter("../WIX1002/io_files/fsktm.htm");
+			 // The path "WIX1002" can be replaced by the project name.
 			 
 			 while(scanner.hasNext()) {
-				 writer.write(scanner.nextLine() + "\n");
+				 writer.print(scanner.nextLine() + "\n");
 			 }
 			 
 			 writer.close();
@@ -24,6 +25,8 @@ public class L7Q2 {
 		 }
 		 catch (IOException e) {
 			 System.out.println("IO Error:" + e.getMessage());
+		 } catch (Exception ex) {
+			 ex.printStackTrace();
 		 }
 	}
 }
