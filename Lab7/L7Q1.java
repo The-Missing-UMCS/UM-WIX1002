@@ -10,7 +10,7 @@ public class L7Q1 {
 	
 	public void run() {
 		generateFile();
-		HashMap<String, String> courseList = getCourseMap();
+		HashMap<String, String> courseList = getCourseList();
 		
 		Scanner scanner = new Scanner(System.in);
 		StringBuilder code = new StringBuilder();
@@ -44,7 +44,7 @@ public class L7Q1 {
 		courseList.put("WXES1112", "Computing Mathematics I");
 		
 		try {
-			ObjectOutputStream writer = new ObjectOutputStream(new FileOutputStream("../coursename.dat"));
+			ObjectOutputStream writer = new ObjectOutputStream(new FileOutputStream("../WIX1002/io_files/coursename.dat"));
 			
 			for (Map.Entry<String, String> course : courseList.entrySet()) {
 				writer.writeObject(String.format("%s,%s", course.getKey(), course.getValue()));
@@ -57,11 +57,11 @@ public class L7Q1 {
 		}
 	}
 	
-	public HashMap<String, String> getCourseMap() {
+	public HashMap<String, String> getCourseList() {
 		HashMap<String, String> courseList = new HashMap<String, String>();
 		
 		try {
-			ObjectInputStream reader = new ObjectInputStream(new FileInputStream("../coursename.dat"));
+			ObjectInputStream reader = new ObjectInputStream(new FileInputStream("../WIX1002/io_files/coursename.dat"));
 			String line = "";
 			String[] courseInfo;
 			
