@@ -2,13 +2,18 @@ package com.fyiernzy.Lab10;
 
 import java.time.LocalDateTime;
 import java.util.*;
-import java.util.concurrent.*;
+import java.util.PriorityQueue;
 import java.io.*;
 
-// Duplicate value & order
+// Reference: https://stackoverflow.com/questions/9560600/what-causes-error-no-enclosing-instance-of-type-foo-is-accessible-and-how-do-i
+// Reference: https://github.com/LimJY03/WIX1002_UM/blob/main/Lab%2010/L10Q4/Appointment.java
+
 public class L10Q4 {
 	public static void main(String[] args) {
 		Appointment.loadAppointment();
+		Appointment.makeAppointment(2022, 12, 16, 9, 11);
+		Appointment.showAppointment();
+		Appointment.doneAppointment();
 		Appointment.showAppointment();
 	}
 }
@@ -18,7 +23,8 @@ interface Searchable {
 }
 
 class Appointment implements Searchable {
-	private static Queue<Appointment> appointmentQueue = new LinkedBlockingQueue<Appointment>();
+	private static PriorityQueue<Appointment> appointmentQueue = 
+			new PriorityQueue<Appointment>(20, new AppointmentComparator());
 	private static final String FILE = "./src/com/fyiernzy/Lab10/io_files/appointment.txt";
 	LocalDateTime dateStartTime;
 	LocalDateTime dateEndTime;
@@ -41,8 +47,9 @@ class Appointment implements Searchable {
 		Iterator<Appointment> it = appointmentQueue.iterator();
 		
 		while(it.hasNext()) {
-			if(it.next().search(newStartTime, newEndTime) == false)
+			if(it.next().search(newStartTime, newEndTime) == false) {
 				return false;
+			}
 		}
 		
 		appointmentQueue.add(new Appointment(newStartTime, newEndTime));
@@ -114,5 +121,12 @@ class Appointment implements Searchable {
 	
 	public static void doneAppointment() {
 		appointmentQueue.poll();
+	}
+	
+	static class AppointmentComparator implements Comparator<Appointment> {
+		@Override
+		public int compare(Appointment a1, Appointment a2) {
+			return (a1.getStartTime().getHour() - a2.getStartTime().getHour());
+		}
 	}
 }
