@@ -15,6 +15,7 @@ public class L6Q3 {
 		scanner.close();
 		
 		IntStream.of(arr).forEach(x -> System.out.print(x + " "));
+		System.out.println("");
 		reverse(arr);
 	}
 	
