@@ -8,10 +8,20 @@ public class PS2Q1 {
 		final int N = scanner.nextInt();
 		scanner.close();
 		
+		int count = 0;
 		for(int i = 0; i < N; i++) {
-			int id = (int)(Math.random() * 100000 + 10000);
+			int id = (int)(Math.random() * (100000 - 10000 + 1) + 10000);
 			System.out.println("Staff ID: " + id);
-			System.out.println(((id / 1000) % 2 == 1 && (id / 10) % 2 == 0) ? "Weekday on" : "Weekday off");
+			if ((id / 1000) % 2 == 1 && (id / 10) % 2 == 0) {
+				System.out.println("Weekday on");
+				count++;
+			}
+			else {
+				System.out.println("Weekday off");
+			}
 		}
+
+		System.out.println("The number of staffs work during weekend is " + count);
+
 	}
 }
