@@ -20,6 +20,7 @@ public class L10Q4 {
 		Appointment.makeAppointment(2023, 1, 1, 11, 12);
 		Appointment.doneAppointment(2);
 		Appointment.showAppointment();
+		Appointment.showAppointment();
 	}
 }
 
@@ -45,41 +46,58 @@ class Appointment implements Searchable {
 	}
 	
 	public static boolean makeAppointment(int year, int month, int day, int startTime, int endTime) {
+		return makeAppointment(year, month, day, startTime, endTime, true);
+	}
+	
+	public static boolean makeAppointment(int year, int month, int day, int startTime, int endTime, boolean enabled) {
 		LocalDateTime newStartTime = LocalDateTime.of(year, month, day, startTime, 0);
 		LocalDateTime newEndTime = LocalDateTime.of(year, month, day, endTime, 0);
+		String message;
 		
 		Iterator<Appointment> it = appointmentList.iterator();
 		
 		while(it.hasNext()) {
 			Appointment appointment = it.next();
 			if(appointment.search(newStartTime, newEndTime) == false) {
+				if (enabled) {
+					System.out.printf(" ==> %2d-%2d-%d -->  %2d:%2s ~ %2d:%2s  --> Appointment Failed.\n",
+							day, month, year, startTime, "00", endTime, "00");
+				}
+				
 				return false;
 			}
 		}
 		
 		appointmentList.add(new Appointment(newStartTime, newEndTime));
 		Collections.sort(appointmentList, new AppointmentComparator());
+		if (enabled) {
+			System.out.printf(" ==> %2d-%2d-%d -->  %2d:%2s ~ %2d:%2s  --> Appointment booked.\n",
+					day, month, year, startTime, "00", endTime, "00");
+		}
+
 		return true;
 	}
 	
 	public static void showAppointment() {
 		Iterator<Appointment> it = appointmentList.iterator();
 		int count = 0;
-		System.out.printf(" %-11s | %7s    | %8s\n", "Appointment", "Date", "Time");
-		System.out.printf(" %12s|%12s|%14s\n", "-".repeat(12),"-".repeat(12),"-".repeat(14));
+		System.out.println("");
+		System.out.printf(" |%13s|%12s| %14s |\n", "-".repeat(13),"-".repeat(12),"-".repeat(14));
+		System.out.printf(" | %-11s | %7s    |  %8s      |\n", "Appointment", "Date", "Time");
+		System.out.printf(" |%13s|%12s| %14s |\n", "-".repeat(13),"-".repeat(12),"-".repeat(14));
 		
 		while(it.hasNext()) {
 			count++;
 			Appointment appointment = it.next();
 			LocalDateTime startTime = appointment.getStartTime();
 			LocalDateTime endTime = appointment.getEndTime();
-			System.out.printf(" %10d  | %2d-%2d-%d | %2d:%2s - %2d:%2s\n",
+			System.out.printf(" | %10d  | %2d-%2d-%d |  %2d:%2s - %2d:%2s |\n",
 					count, startTime.getDayOfMonth(), startTime.getMonthValue(), startTime.getYear(), 
 					startTime.getHour(), "00", endTime.getHour(), "00");
 		}
 		
-		System.out.printf(" %-11s | %7s    | %8s\n", "", "", "");
-		System.out.printf(" %12s|%12s|%14s\n", "-".repeat(12),"-".repeat(12),"-".repeat(14));
+		System.out.printf(" | %-11s | %7s    |  %13s |\n", "", "", "");
+		System.out.printf(" |%13s|%12s| %14s |\n\n", "-".repeat(13),"-".repeat(12),"-".repeat(14));
 	}
 	
 	private LocalDateTime getStartTime() {
@@ -117,7 +135,7 @@ class Appointment implements Searchable {
 				String[] info = line.split("/");
 				makeAppointment(
 						Integer.parseInt(info[0]), Integer.parseInt(info[1]), Integer.parseInt(info[2]),
-						Integer.parseInt(info[3]), Integer.parseInt(info[4]));
+						Integer.parseInt(info[3]), Integer.parseInt(info[4]), false);
 			}
 			System.err.println("Load successfully");
 		} catch (Exception ex) {
