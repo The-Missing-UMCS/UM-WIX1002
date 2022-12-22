@@ -7,7 +7,7 @@ public class L6Q5 {
 		int x, y, z, points = 0;
 		Scanner scanner = new Scanner(System.in);
 		
-		while(true) {
+		 do {
 			System.out.println("Enter negative number to quit.");
 			x = (int)(Math.random() * 13);
 			y = (int)(Math.random() * 13);
@@ -19,7 +19,7 @@ public class L6Q5 {
 			
 			if (check(x, y, z))
 				points++;
-		}
+		} while(true);
 		
 		scanner.close();
 		System.out.printf("Your score is %d", points);

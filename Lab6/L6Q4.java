@@ -7,12 +7,9 @@ public class L6Q4 {
 	}
 	
 	public static int findGCD(int a, int b) {
-		int dividend = (a > b) ? a : b;
-		int divisor = (b < a) ? b : a;
-		
-		if (dividend % divisor == 0)
-			return divisor;
+		if (b == 0)
+			return a;
 		else
-			return findGCD(divisor, dividend % divisor);
+			return findGCD(b, a % b);
 	}
 }

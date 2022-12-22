@@ -16,7 +16,8 @@ public class L6Q3 {
 		
 		IntStream.of(arr).forEach(x -> System.out.print(x + " "));
 		System.out.println("");
-		reverse(arr);
+		IntStream.of(arr).map(x -> reverse(x)).forEach(x -> System.out.print(x + " "));
+
 	}
 	
 	public static int reverse(int num) {
@@ -28,10 +29,5 @@ public class L6Q3 {
 		}
 		
 		return tmp;
-	}
-	
-	public static void reverse(int[] arr) {
-		for(int i = 0; i < arr.length; i++) 
-			System.out.print(reverse(arr[i]) + " ");
 	}
 }
