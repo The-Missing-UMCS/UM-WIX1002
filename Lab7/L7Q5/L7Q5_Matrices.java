@@ -27,7 +27,7 @@ public class L7Q5_Matrices {
 	    
 	    }
 	    catch (FileNotFoundException ex) { ex.printStackTrace(); }
-		catch (IOException ex) { ex.printStackTrace(); }
+	    catch (IOException ex) { ex.printStackTrace(); }
 	}
 	
 	public static void sortMatrixByName(String[][] personList) {
