@@ -35,7 +35,7 @@ public class L7Q5_LinkedHashMap {
 	        for (String name: names) {
 	            System.out.printf("Name: %-12s, Age: %-2d, Gender: %1s\n", name, data_1.get(name), data_2.get(name));
 	        }
-		}
+	    }
 	    catch (FileNotFoundException ex) { ex.printStackTrace(); }
 		catch (IOException ex) { ex.printStackTrace(); }
 	}
