@@ -89,7 +89,7 @@ Here are some useful debugging techniques:
 
 1. Go <https://stackoverflow.com/>. You could find virtually all answers on it.
 2. Utilize <https://www.google.com/>. It's much more stronger than you might expect.
-3. Ask questions on <https://openai.com/blog/chatgpt/>. chatGPT extremely useful, but never overrely on it. Never let AI to restrict your imagination.
+3. Ask questions on <https://openai.com/blog/chatgpt/>. chatGPT is extremely useful, but never overrely on it. Never let AI to restrict your imagination.
 4. Read others' code on <https://github.com/> or <https://gitlab.com/>. Programmers read more than code.
 5. Start reading Java Documentation on <https://docs.oracle.com/javase/7/docs/api/>. It provides tools and explanations you need which will make your life simpler.
 6. Ask your buddy/ demo/ friends/ anyone who is good at programming.
