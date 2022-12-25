@@ -17,7 +17,7 @@ public class L7Q2 {
 			 // The path "WIX1002" can be replaced by the project name.
 			 
 			 while(scanner.hasNext()) {
-				 writer.print(scanner.nextLine() + "\n");
+				 writer.println(scanner.nextLine());
 			 }
 			 
 			 writer.close();

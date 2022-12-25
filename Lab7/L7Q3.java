@@ -1,7 +1,6 @@
 package com.fyiernzy.Lab7;
 
 import java.io.IOException;
-import java.util.Scanner;
 import java.io.*;
 
 
