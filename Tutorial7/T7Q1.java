@@ -28,24 +28,17 @@ public class T7Q1 {
 	}
 	
 	public static void readText(String file) {
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(file));
+		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			String line = "";
-			int num;
-			int max = -1;
+			int max = Integer.MIN_VALUE, num;
 			
 			while((line = reader.readLine()) != null) {
-				num = Integer.parseInt(line);
+				max = ((num = Integer.parseInt(line)) > max ? num : max);
 				System.out.print(num + " ");
-				
-				if (num > max)
-					max = num;
 			}
-			
-			reader.close();
+
 			System.out.println("\nLargest number: " + max);
-			
-			
+
 		} catch (Exception ex) {}
 	}
 	
@@ -65,21 +58,18 @@ public class T7Q1 {
 	
 	public static void readBin(String file) {
 		int total = 0, count = 0;
-		try {
-			ObjectInputStream input = new ObjectInputStream(new FileInputStream(file));
+		
+		try (ObjectInputStream input = new ObjectInputStream(new FileInputStream(file))) {
 			int num;
 			
 			while(true) {
-				num = input.readInt();	
-				System.out.print(num + " ");
+				System.out.print((num = input.readInt()) + " ");
 				total += num;
 				count++;
 			}
-			
-			
+
 		} catch (EOFException ex) {
-			System.out.println("");
-			System.out.println("The average is " + (total / count));
+			System.out.println("\nThe average is " + (total / count));
 		}
 		
 		catch (Exception ex) {}
