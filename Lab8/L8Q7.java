@@ -5,6 +5,7 @@ package com.fyiernzy.Lab8;
 public class L8Q7 {
 	public static void main(String[] args) {
 		System.out.println(new Money(123.47).getNotesAndCoints());
+		System.out.println(Money.add(34.56, 45.89).getAmountAsCash());
 	}
 }
 
@@ -13,8 +14,10 @@ class Money {
 	static final int[] COINS = {50, 20, 10, 5};
 	int[] counts = new int[NOTES.length + COINS.length];
 	final int valueCent;
+	final double valueCash;
 	
 	Money(Double amount) {
+		this.valueCash = amount;
 		this.valueCent = round((int) (amount * 100));
 	}
 	
@@ -27,9 +30,25 @@ class Money {
 	}
 	
 	public double getAmountAsCash() {
-		return this.valueCent / 100;
+		return this.valueCash;
 	}
 	
+	public static Money substract(Money one, Money two) {
+		return new Money(one.getAmountAsCash() - two.getAmountAsCash());
+	}
+	
+	public static Money substract(double value_one, double value_two) {
+		return substract(new Money(value_one), new Money(value_two));
+	}
+	
+	public static Money add(Money one, Money two) {
+		return new Money(one.getAmountAsCash() + two.getAmountAsCent());
+	}
+	
+	public static Money add(double value_one, double value_two) {
+		return add(new Money(value_one), new Money(value_two));
+	}
+
 	public String getNotesAndCoints() {
 		int tmp = valueCent;
 		StringBuilder sb = new StringBuilder();
