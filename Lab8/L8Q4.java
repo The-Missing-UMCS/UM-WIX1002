@@ -1,20 +1,27 @@
 package com.fyiernzy.Lab8;
 
+import java.util.Scanner;
+
 public class L8Q4 {
 	public static void main(String[] args) {
-		new Fraction(200, 625).showSimplest();
+		new Fraction(200, 625).showSimplestFraction();
 	}
 }
 
 class Fraction {
 	int numerator;
 	int denominator;
-	int gcd;
 	
-	Fraction(int numerator, int denominator){
+	Fraction(int numerator, int denominator) {
 		this.numerator = numerator;
 		this.denominator = denominator;
-		this.gcd = findGCD(numerator, denominator);
+	}
+	
+	Fraction() {
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the numerator (integer): "); this.numerator = sc.nextInt();
+        System.out.print("Enter the denominator (integer): "); this.denominator = sc.nextInt();
+        sc.close();
 	}
 	
 	public void setNumerator(int n) {
@@ -33,18 +40,21 @@ class Fraction {
 		this.denominator = n;
 	}
 	
-	public int findGCD(int x, int y) {
-		int a, b;
-		a = (x > y) ? x : y;
-		b = (x < y) ? x : y;
-		
-		if (a % b == 0)
-			return b;
-		else
-			return findGCD(b, a % b);
+	public int findGCD(int x, int y) {		
+		if (y == 0) return x;
+		else return findGCD(y, x % y);
 	}
 	
-	public void showSimplest() {
-		System.out.printf("%d / %d", (numerator / gcd), (denominator / gcd));
+	public int getGCD() {
+		return findGCD(this.numerator, this.denominator);
+	}
+	
+	public String getSimplestFraction() {
+		int gcd = getGCD();
+		return (numerator / gcd) + "/" + (denominator / gcd);
+	}
+	
+	public void showSimplestFraction() {
+		System.out.println("Simpest Fraction: " + getSimplestFraction());
 	}
 }

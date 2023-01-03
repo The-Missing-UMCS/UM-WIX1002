@@ -16,15 +16,16 @@ public class L8Q6 {
 class BurgerStall {
 	static int allSales;
 	private final String ID;
-	private int totalSold = 0;
+	private int totalSold;
 	
 	BurgerStall(String ID) {
 		this.ID = ID;
+		this.totalSold = 0;
 	}
 	
 	public void sold(int count) {
 		if (count > 0) {
-			totalSold += count;
+			this.totalSold += count;
 			allSales += count;
 		}
 	}

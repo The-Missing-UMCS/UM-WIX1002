@@ -15,11 +15,19 @@ class Money {
 	final int valueCent;
 	
 	Money(Double amount) {
-		this.valueCent = roundUp((int) (amount * 100));
+		this.valueCent = round((int) (amount * 100));
 	}
 	
-	public static int roundUp(int value) {
+	public static int round(int value) {
 		return ((value + 2) / 5 * 5);
+	}
+	
+	public int getAmountAsCent() {
+		return this.valueCent;
+	}
+	
+	public double getAmountAsCash() {
+		return this.valueCent / 100;
 	}
 	
 	public String getNotesAndCoints() {
