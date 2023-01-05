@@ -31,9 +31,9 @@ class Number {
 			while(set.size() < size) {
 				set.add((int)(Math.random() * (upper + 1)));
 			}
-			arr = set.stream().mapToInt(Integer::intValue).toArray();
+			this.arr = set.stream().mapToInt(Integer::intValue).toArray();
 		} else {
-			arr = new Random().ints(size, 0, upper).toArray();
+			this.arr = new Random().ints(size, 0, upper).toArray();
 		}
 		Arrays.sort(arr);
 	}
@@ -44,26 +44,15 @@ class Number {
 	}
 	
 	public void displayAll() {
-		System.out.println("Items  : " + this);
-		System.out.println("Max    : " + getMax());
-		System.out.println("Min    : " + getMin());
-		System.out.println("Average: " + getAverage());
-		
-		System.out.print("Even   : ");
-		displayEven();
-		System.out.println("");
-		
-		System.out.print("Odd    : ");
-		displayOdd();
-		System.out.println("");
-		
-		System.out.print("Square : " );
-		displaySquare();
-		System.out.println("");
-		
-		System.out.print("Prime  : " );
-		displayPrime();
-		System.out.println("");
+		System.out.println("Items          : " + this);
+		System.out.println("Max            : " + getMax());
+		System.out.println("Min            : " + getMin());
+		System.out.println("Average        : " + getAverage());
+		System.out.print("Even           : "); this.displayEven(); System.out.println("");
+		System.out.print("Odd            : "); this.displayOdd(); System.out.println("");
+		System.out.print("Square         : " ); this.displaySquare(); System.out.println("");
+		System.out.print("Perfect square : "); this.displayPerfectSquare(); System.out.println("");
+		System.out.print("Prime          : " ); this.displayPrime(); System.out.println("");
 		
 	}
 	
@@ -124,6 +113,13 @@ class Number {
 		IntStream.of(arr).map(x -> calcSquare(x)).forEach(x -> System.out.print(x + " "));
 	}
 	
+	public void displayPerfectSquare() {
+		IntStream.of(arr).filter(x -> isPerfectSquare(x)).forEach(x -> System.out.print(x + " "));
+	}
+	
+	public boolean isPerfectSquare(int x) {
+		return (int)(Math.sqrt(x)) == Math.sqrt(x);
+	}
 	@Override
 	public String toString() {
 		return Arrays.toString(arr);
