@@ -32,12 +32,12 @@ class Fraction {
 		this.denominator = n;
 	}
 	
-	public void getNumerator(int n) {
-		this.numerator = n;
+	public int getNumerator() {
+		return this.numerator;
 	}
 	
-	public void getDenominator(int n) {
-		this.denominator = n;
+	public int getDenominator() {
+		return this.denominator;
 	}
 	
 	public int findGCD(int x, int y) {		
