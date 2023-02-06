@@ -2,6 +2,8 @@
 
 🌱 WIX1002 - Include notes, questions, source code and explanation for Tutorials/ Labs (UM-WIX1002).
 
+</br>
+
 ## Content
 
 ---
@@ -19,8 +21,6 @@
   - [Lab9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab9)
   - [Lab10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab10)
 
-</br>
-
 - ### `Tutorial`
 
   - [Tutorial3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial3)
@@ -32,7 +32,45 @@
   - [Tutorial9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial9)
   - [Tutorial10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial10)
 
-<br>
+- ### `Problem Solving`
+
+  - [Problem Solving 1](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_1)
+  - [Problem Solving 2](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_2)
+  - [Problem Solving 3](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_3)
+
+- ### `Viva`
+
+  - [Viva 1](https://github.com/fyiernzy/UM-WIX1002/tree/main/Viva/Viva1)
+  - [Viva 2](https://github.com/fyiernzy/UM-WIX1002/tree/main/Viva/Viva2)
+
+- ### `Past Year`
+
+  - [Past Year 2019](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2019)
+  - [Past Year 2020](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2020)
+
+</br>
+
+## Resource
+
+---
+
+- ### `Websites`
+
+  - [Codecademy - Java](https://www.codecademy.com/resources/docs/java)
+  - [Sololearn - Java](https://www.sololearn.com/learning/1068)
+  - [GeeksforGeeks - Java](https://www.geeksforgeeks.org/java/)
+  - [w3Schools - Java](https://www.w3schools.com/java/)
+  - [JavaPoints - Java](https://www.javatpoint.com/java-tutorial)
+  - [Oravle - Java](https://docs.oracle.com/javase/tutorial/)
+  - [Programmiz - Java](https://www.programiz.com/java-programming)
+
+- ### `Tools`
+
+  - [ChatGPT - A tool that every programmer should know](https://openai.com/blog/chatgpt/)
+  - [StackOverFlow - A platform that could fix your every bug](https://stackoverflow.com/)
+  - [Github - No comments](https://github.com/)
+
+</br>
 
 ## Git Command
 
