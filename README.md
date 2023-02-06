@@ -2,51 +2,49 @@
 
 🌱 WIX1002 - Include notes, questions, source code and explanation for Tutorials/ Labs (UM-WIX1002).
 
-</br>
-
 ## Content
 
 ---
 
 - ### `Lab`
 
-  - [Lab1 - Getting Started with Java](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab1)
-  - [Lab2 - Java Fundamental](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab2)
-  - [Lab3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab3)
-  - [Lab4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab4)
-  - [Lab5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab5)
-  - [Lab6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab6)
-  - [Lab7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab7)
-  - [Lab8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab8)
-  - [Lab9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab9)
-  - [Lab10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab10)
+  - [🍁 Lab1 - Getting Started with Java](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab1)
+  - [🍁 Lab2 - Java Fundamental](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab2)
+  - [🍁 Lab3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab3)
+  - [🍁 Lab4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab4)
+  - [🍁 Lab5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab5)
+  - [🍁 Lab6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab6)
+  - [🍁 Lab7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab7)
+  - [🍁 Lab8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab8)
+  - [🍁 Lab9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab9)
+  - [🍁 Lab10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab10)
 
 - ### `Tutorial`
 
-  - [Tutorial3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial3)
-  - [Tutorial4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial4)
-  - [Tutorial5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial5)
-  - [Tutorial6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial6)
-  - [Tutorial7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial7)
-  - [Tutorial8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial8)
-  - [Tutorial9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial9)
-  - [Tutorial10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial10)
+  - [🍃 Tutorial3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial3)
+  - [🍃 Tutorial4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial4)
+  - [🍃 Tutorial5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial5)
+  - [🍃 Tutorial6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial6)
+  - [🍃 Tutorial7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial7)
+  - [🍃 Tutorial8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial8)
+  - [🍃 Tutorial9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial9)
+  - [🍃 Tutorial10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial10)
 
 - ### `Problem Solving`
 
-  - [Problem Solving 1](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_1)
-  - [Problem Solving 2](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_2)
-  - [Problem Solving 3](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_3)
+  - [🚀 Problem Solving 1](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_1)
+  - [🚀 Problem Solving 2](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_2)
+  - [🚀 Problem Solving 3](https://github.com/fyiernzy/UM-WIX1002/tree/main/Problem%20Solving/Problem_Solving_3)
 
 - ### `Viva`
 
-  - [Viva 1](https://github.com/fyiernzy/UM-WIX1002/tree/main/Viva/Viva1)
-  - [Viva 2](https://github.com/fyiernzy/UM-WIX1002/tree/main/Viva/Viva2)
+  - [💯 Viva 1](https://github.com/fyiernzy/UM-WIX1002/tree/main/Viva/Viva1)
+  - [💯 Viva 2](https://github.com/fyiernzy/UM-WIX1002/tree/main/Viva/Viva2)
 
 - ### `Past Year`
 
-  - [Past Year 2019](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2019)
-  - [Past Year 2020](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2020)
+  - [🧧 Past Year 2019](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2019)
+  - [🧧 Past Year 2020](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2020)
 
 </br>
 
@@ -56,19 +54,19 @@
 
 - ### `Websites`
 
-  - [Codecademy - Java](https://www.codecademy.com/resources/docs/java)
-  - [Sololearn - Java](https://www.sololearn.com/learning/1068)
-  - [GeeksforGeeks - Java](https://www.geeksforgeeks.org/java/)
-  - [w3Schools - Java](https://www.w3schools.com/java/)
-  - [JavaPoints - Java](https://www.javatpoint.com/java-tutorial)
-  - [Oravle - Java](https://docs.oracle.com/javase/tutorial/)
-  - [Programmiz - Java](https://www.programiz.com/java-programming)
+  - [💻 Codecademy - Java](https://www.codecademy.com/resources/docs/java)
+  - [💻 Sololearn - Java](https://www.sololearn.com/learning/1068)
+  - [💻 GeeksforGeeks - Java](https://www.geeksforgeeks.org/java/)
+  - [💻 w3Schools - Java](https://www.w3schools.com/java/)
+  - [💻 JavaPoints - Java](https://www.javatpoint.com/java-tutorial)
+  - [💻 Oracle - Java](https://docs.oracle.com/javase/tutorial/)
+  - [💻 Programmiz - Java](https://www.programiz.com/java-programming)
 
 - ### `Tools`
 
-  - [ChatGPT - A tool that every programmer should know](https://openai.com/blog/chatgpt/)
-  - [StackOverFlow - A platform that could fix your every bug](https://stackoverflow.com/)
-  - [Github - No comments](https://github.com/)
+  - [🤖 ChatGPT](https://openai.com/blog/chatgpt/)
+  - [❔StackOverFlow](https://stackoverflow.com/)
+  - [🔥 Github](https://github.com/)
 
 </br>
 
