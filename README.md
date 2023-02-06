@@ -46,8 +46,6 @@
   - [🧧 Past Year 2019](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2019)
   - [🧧 Past Year 2020](https://github.com/fyiernzy/UM-WIX1002/tree/main/PastYear/PastYear2020)
 
-</br>
-
 ## Resource
 
 ---
@@ -67,8 +65,6 @@
   - [🤖 ChatGPT](https://openai.com/blog/chatgpt/)
   - [❔StackOverFlow](https://stackoverflow.com/)
   - [🔥 Github](https://github.com/)
-
-</br>
 
 ## Git Command
 
@@ -92,8 +88,6 @@ Here are some of the useful git commands:
 
 - <https://www.atlassian.com/git/tutorials/setting-up-a-repository>
 - <https://www.youtube.com/watch?v=2sjqTHE0zok>
-
-</br>
 
 ## Fun Story
 
@@ -143,9 +137,9 @@ Anyway, feel free to contact me at 017-780 9298 (Whatsapp/ Telegram) if you have
 
 Good luck guys. You are the best.
 
-</br>
-
 ### Reference Code for WIX1002 on GitHub/ GitLab
 
 - <https://github.com/LimJY03/WIX1002_UM>
 - <https://github.com/fyiernzy/UM-WIX1002>
+- <https://github.com/chenghui-lee/WIX1002-Past-Year>
+- <https://github.com/y33-j3T/WIX1002-Fundamentals-of-Programming>
