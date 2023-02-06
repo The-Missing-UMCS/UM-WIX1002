@@ -4,8 +4,6 @@
 
 ## Content
 
----
-
 - ### `Lab`
 
   - [🍁 Lab1 - Getting Started with Java](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab1)
@@ -48,8 +46,6 @@
 
 ## Resource
 
----
-
 - ### `Websites`
 
   - [💻 Codecademy - Java](https://www.codecademy.com/resources/docs/java)
@@ -68,8 +64,6 @@
 
 ## Git Command
 
----
-
 Here are some of the useful git commands:
 
 - `git add <file/folder>`
@@ -84,14 +78,13 @@ Here are some of the useful git commands:
 
 </br>
 
-### Recommended Website on Git
+## Recommended Website on Git
 
 - <https://www.atlassian.com/git/tutorials/setting-up-a-repository>
 - <https://www.youtube.com/watch?v=2sjqTHE0zok>
 
 ## Fun Story
 
----
 Recentlt, I have lost every Lab and Tutorial in Eclipse. I just found it on Wednesday night (14/12/2022). Even more heartbreakingly, I didn't have any copy of them. Therefore, ***I HAVE TO REDO ALL OF THEM***, besides the one I've pushed to Gitlab/ Github (i.e Lab1 ~ Lab6), .
 
 </br>
@@ -137,7 +130,7 @@ Anyway, feel free to contact me at 017-780 9298 (Whatsapp/ Telegram) if you have
 
 Good luck guys. You are the best.
 
-### Reference Code for WIX1002 on GitHub/ GitLab
+## Reference Code for WIX1002 on GitHub/ GitLab
 
 - <https://github.com/LimJY03/WIX1002_UM>
 - <https://github.com/fyiernzy/UM-WIX1002>
