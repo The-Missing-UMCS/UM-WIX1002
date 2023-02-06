@@ -6,52 +6,33 @@
 
 ---
 
-### `Lab`
+- ### `Lab`
 
----
+  - [Lab1 - Getting Started with Java](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab1)
+  - [Lab2 - Java Fundamental](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab2)
+  - [Lab3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab3)
+  - [Lab4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab4)
+  - [Lab5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab5)
+  - [Lab6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab6)
+  - [Lab7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab7)
+  - [Lab8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab8)
+  - [Lab9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab9)
+  - [Lab10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab10)
 
-[Lab1 - Getting Started with Java](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab1)
+</br>
 
-[Lab2 - Java Fundamental](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab2)
+- ### `Tutorial`
 
-[Lab3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab3)
-
-[Lab4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab4)
-
-[Lab5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab5)
-
-[Lab6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab6)
-
-[Lab7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab7)
-
-[Lab8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab8)
-
-[Lab9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab9)
-
-[Lab10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab10)
-
-### `Tutorial`
-
----
-
-[Tutorial3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial3)
-
-[Tutorial4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial4)
-
-[Tutorial5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial5)
-
-[Tutorial6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial6)
-
-[Tutorial7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial7)
-
-[Tutorial8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial8)
-
-[Tutorial9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial9)
-
-[Tutorial10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial10)
+  - [Tutorial3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial3)
+  - [Tutorial4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial4)
+  - [Tutorial5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial5)
+  - [Tutorial6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial6)
+  - [Tutorial7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial7)
+  - [Tutorial8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial8)
+  - [Tutorial9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial9)
+  - [Tutorial10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial10)
 
 <br>
-
 
 ## Git Command
 
@@ -59,10 +40,10 @@
 
 Here are some of the useful git commands:
 
-- `git add <file/folder>` 
+- `git add <file/folder>`
 
     Add a change in the working directory to staging area
-- `git add .` 
+- `git add .`
 
     Add all changes made in the working directory to staging area
 - `git status`
