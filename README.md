@@ -1,33 +1,57 @@
-## Introduction
+# README
+
+🌱 WIX1002 - Include notes, questions, source code and explanation for Tutorials/ Labs (UM-WIX1002).
+
+## Content
+
 ---
-The structure for the directory is as follow:
 
-```md
-|_Lab1/
-    |_ L1Q1.java
-    |_ L1Q2.java
-    |_ L1Q3.java
+### `Lab`
 
-|_ Lab2/
-    |_L2Q1.java
-    |_L2Q2.java
+---
 
-|_ README.md
-```
+[Lab1 - Getting Started with Java](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab1)
 
-Except for the problem solving:
+[Lab2 - Java Fundamental](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab2)
 
-```md
-|_ Problem Solving/
-    
-    |_ Problem_Solving_1/
-        |_ PS1Q1.java
-        |_ PS1Q2.java
+[Lab3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab3)
 
-    |_ Problem_Solving_2/
-        |_PS2Q1.java
-        |_PS2Q2.java
-```
+[Lab4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab4)
+
+[Lab5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab5)
+
+[Lab6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab6)
+
+[Lab7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab7)
+
+[Lab8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab8)
+
+[Lab9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab9)
+
+[Lab10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Lab10)
+
+### `Tutorial`
+
+---
+
+[Tutorial3 - Flow of Control (Selection)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial3)
+
+[Tutorial4 - Flow of Control (Repetition)](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial4)
+
+[Tutorial5 - Arrays](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial5)
+
+[Tutorial6 - Java Methods](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial6)
+
+[Tutorial7 - FileIO](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial7)
+
+[Tutorial8 - Class](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial8)
+
+[Tutorial9 - Inheritance](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial9)
+
+[Tutorial10 - Polymorphism](https://github.com/fyiernzy/UM-WIX1002/tree/main/Tutorial10)
+
+<br>
+
 
 ## Git Command
 
