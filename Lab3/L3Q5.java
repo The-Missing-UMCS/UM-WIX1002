@@ -13,7 +13,7 @@ public class L3Q5 {
 		val[i] = sc.nextInt();
         }
         sc.close();
-        int a = val[0], b = val[1], c = val[2], d = val[3], e = val[4], f = val[5]；
+        int a = val[0], b = val[1], c = val[2], d = val[3], e = val[4], f = val[5];
 	int denom = a * d - b * c;
         if(denom == 0)
             System.out.println("no solution");

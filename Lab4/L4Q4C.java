@@ -2,7 +2,7 @@ package Lab4;
 
 import java.util.*;
 
-public class WIX1002_Lab4_Q5 {
+public class L4Q4C {
 	String[] months = {"JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"};
 	String[] weeks = new String[42];
 	int[] days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -12,7 +12,7 @@ public class WIX1002_Lab4_Q5 {
 	int firstDayOfMonth;
 	
 	public static void main(String[] args) {
-		new WIX1002_Lab4_Q5().run();
+		new L4Q4C().run();
 	}
 	
 	public void run() {

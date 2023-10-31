@@ -18,6 +18,6 @@ public class L3Q3 {
 		else 
 			commission = 0.05;
 		
-		System.out.printf("The commission is %.2f", salesVolume, commission);
+		System.out.printf("The commission is %.2f", commission);
 	}
 }

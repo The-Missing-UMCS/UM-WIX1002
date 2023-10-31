@@ -2,13 +2,13 @@ package Lab4;
 
 import java.util.*;
 
-public class WIX1002_Lab4_Q5_V2 {
+public class L4Q4B {
 	int year;
 	int firstDayOfYear;
 	int targetMonth;
 	
 	public static void main(String[] args) {
-		new WIX1002_Lab4_Q5_V2().run();
+		new L4Q4B().run();
 	}
 	
 	public void run() {
