@@ -10,7 +10,7 @@ public class L3Q6 {
 		r = sc.nextInt();
 		System.out.print("Enter the coordinate (4 5) : ");
 		x = sc.nextInt(); y = sc.nextInt(); sc.close();
-		dist = Math.pow(x * x + y * y, 1 / 2);
+		dist = Math.sqrt(x * x + y * y);
 		System.out.println(dist > r ? "Outside" : "Inside");
 	}
 }
