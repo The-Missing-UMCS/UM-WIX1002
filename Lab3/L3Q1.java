@@ -27,6 +27,9 @@ public class L3Q1 {
 		case '/':
 			result = (int) (num1 / num2);
 			break;
+		case '%':
+			result = num1 % num2;
+			break;
 		}
 		
 		System.out.printf("%d %c %d is %d", num1, operator, num2, result);
