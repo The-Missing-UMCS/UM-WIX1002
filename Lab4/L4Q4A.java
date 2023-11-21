@@ -11,6 +11,7 @@ public class L4Q4A {
         Calendar cal = new Calendar(year, firstDayOfYear);
         cal.displayCalendar(5);
         cal.displayCalendar(8);
+        cal.displayCalendar(12);
     }
 }
 

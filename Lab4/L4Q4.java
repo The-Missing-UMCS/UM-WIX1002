@@ -23,6 +23,8 @@ public class L4Q4 {
                 System.out.println("");
         }
 
+        System.out.println();
+
         System.out.printf("%4s%4s%4s%4s%4s%4s%4s\n", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
         for(int i = 0; i < firstDayOfAug; i++) {
             System.out.printf("%4s", "");
@@ -32,6 +34,7 @@ public class L4Q4 {
             if ((i + firstDayOfAug) % 7 == 0) 
                 System.out.println("");
         }
+        
     }
 
     public static boolean isLeapYear(int year) {
