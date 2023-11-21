@@ -2,11 +2,8 @@ package Lab5;
 
 public class L5Q1 {
 	public static void main(String[] args) {
-		int sum = 0;
-		int n = 10;
-		int max = Integer.MIN_VALUE;
-		int min = Integer.MAX_VALUE;
-		int[] arr = new int[10];
+		int sum = 0, n = 10, max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+		int[] arr = new int[n];
 		
 		for(int i = 0; i < n; i++) {
 			arr[i] = (int)(Math.random() * 101);
