@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab6;
+package Lab6;
 
 import java.util.Scanner;
 
@@ -14,11 +14,9 @@ public class L6Q5 {
 			System.out.printf("%d X %d = ", x, y);
 			z = scanner.nextInt();
 			
-			if (z < 0) 
-				break;
+			if (z < 0) break;
+			if (check(x, y, z)) points++;
 			
-			if (check(x, y, z))
-				points++;
 		} while(true);
 		
 		scanner.close();
@@ -26,6 +24,6 @@ public class L6Q5 {
 	}
 	
 	public static boolean check(int x, int y, int z) {
-		return (x * y == z);
+		return x * y == z;
 	}
 }

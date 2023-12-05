@@ -1,8 +1,8 @@
-package com.fyiernzy.Lab6;
+package Lab6;
 
 import java.util.stream.IntStream;
 
-public class L6Q1 {
+public class L6Q1C {
 	public static void main(String[] args) {
 		IntStream.rangeClosed(1, 20).forEach(x -> System.out.print(triangular(x) + " "));		
 	}

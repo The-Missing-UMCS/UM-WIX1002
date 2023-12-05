@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab6;
+package Lab6;
 
 public class L6Q4 {
 	public static void main(String[] args) {
@@ -7,9 +7,6 @@ public class L6Q4 {
 	}
 	
 	public static int findGCD(int a, int b) {
-		if (b == 0)
-			return a;
-		else
-			return findGCD(b, a % b);
+		return b == 0 ? a : findGCD(b, a % b);
 	}
 }

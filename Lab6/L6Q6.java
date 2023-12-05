@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab6;
+package Lab6;
 
 public class L6Q6 {
 	public static void main(String[] args) {
@@ -39,13 +39,12 @@ public class L6Q6 {
 	
 	public static boolean isPrime(int n) {
 		// https://gitlab.com/fop2022/group05/-/blob/main/22004835/Lab%206/L6Q6.java
-		if (n < 2 || (n % 2 == 0 && n != 2))
-			return false;
+		if(n == 2) return true;
+		if(n < 2)  return false;
 
-		for(int i = 3; i <= Math.sqrt(n); i += 2) {
+		for(int i = 3; i <= Math.sqrt(n); i += 2) 
 			if (n % i == 0)
 				return false;
-		}
 		
 		return true;
 		

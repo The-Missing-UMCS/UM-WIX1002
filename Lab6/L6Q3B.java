@@ -1,9 +1,9 @@
-package com.fyiernzy.Lab6;
+package Lab6;
 
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
-public class L6Q3 {
+public class L6Q3B {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int[] arr = new int[10]; 
