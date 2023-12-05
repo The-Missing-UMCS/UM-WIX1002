@@ -11,7 +11,7 @@ public class L5Q1 {
 		
 			if (arr[i] > max) 
 				max = arr[i];
-			else
+			else if (arr[i] < min)
 				min = arr[i];
 		}
 		
