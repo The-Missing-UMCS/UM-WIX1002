@@ -1,4 +1,4 @@
-package PastYear2016.S1;
+package PastYear.PastYear2016.Semester1;
 
 import java.util.Random;
 import java.util.Scanner;

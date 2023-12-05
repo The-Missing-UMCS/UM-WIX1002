@@ -1,33 +1,44 @@
-package PastYear2016.S1;
+package PastYear.PastYear2016.Semester1;
 
 import java.util.Scanner;
 import java.io.FileInputStream;
 
 public class Q4 {
 	public static void main(String[] args) {
-		boolean hasEightChar, hasUppercase, hasLowercase, hasDigit, hasSymbol;
-		
-		try(Scanner sc = new Scanner(new FileInputStream("./src/PastYear2016/S1/Q4.txt"))){
-			while(sc.hasNextLine()) {
-				hasEightChar = hasUppercase = hasLowercase = hasDigit = hasSymbol = false;
-				String password = sc.nextLine();
-				hasEightChar = password.length() >= 8 ? true : false;
-				
-				if(hasEightChar) {
-					for(int i = 0; i < password.length(); i++) {
-						char ch = password.charAt(i);
-						if(!hasUppercase && Character.isUpperCase(ch)) { hasUppercase = true; }
-						if(!hasLowercase && Character.isLowerCase(ch)) { hasLowercase = true; }
-						if(!hasDigit && Character.isDigit(ch)) { hasDigit = true;}
-						if(!hasSymbol && !Character.isLetterOrDigit(ch) && !Character.isWhitespace(ch)) { hasSymbol = true; }
-						if(hasUppercase && hasLowercase && hasDigit && hasSymbol) break;
-					}
-				}
-				if(hasEightChar && hasUppercase && hasLowercase && hasDigit && hasSymbol) 
-					System.out.println("Strong password");
-				else 
-					System.out.println("Not a strong password");
-			}
+		try (Scanner sc = new Scanner(new FileInputStream("./src/PastYear2016/S1/Q4.txt"))) {
+			while (sc.hasNextLine())
+				System.out.println(isStrongPassword(sc.nextLine()) ? "Strong" : "Not a strong password");
 		} catch (Exception ex) {}
+	}
+
+	public static boolean isStrongPassword(String password) {
+		boolean hasUppercase, hasLowercase, hasDigit, hasSymbol;
+		hasUppercase = hasLowercase = hasDigit = hasSymbol = false;
+
+		if (password.length() < 8)
+			return false;
+
+		for (char ch : password.toCharArray()) {
+			if (!hasUppercase && Character.isUpperCase(ch)) 
+				hasUppercase = true;
+			
+			if (!hasLowercase && Character.isLowerCase(ch)) 
+				hasLowercase = true;
+			
+			if (!hasDigit && Character.isDigit(ch)) 
+				hasDigit = true;
+			
+			if (!hasSymbol && isSymbol(ch)) 
+				hasSymbol = true;
+			
+			if (hasUppercase && hasLowercase && hasDigit && hasSymbol)
+				return true;
+		}
+
+		return false;
+	}
+
+	static boolean isSymbol(char ch) {
+		return !Character.isLetterOrDigit(ch) && !Character.isWhitespace(ch);
 	}
 }
