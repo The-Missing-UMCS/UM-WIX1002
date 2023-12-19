@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab7;
+package Lab7;
 
 import java.util.Scanner;
 import java.net.URL;

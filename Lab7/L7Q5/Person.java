@@ -1,9 +1,9 @@
-package com.fyiernzy.Lab7;
+package Lab7.L7Q5;
 
 public class Person implements Comparable<Person> {
-	String name;
-	int age;
-	char gender;
+	private String name;
+	private int age;
+	private char gender;
 	
 	Person(String name, int age, char gender) {
 		this.name = name;

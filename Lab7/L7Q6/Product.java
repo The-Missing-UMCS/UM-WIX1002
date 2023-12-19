@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab7;
+package Lab7.L7Q6;
 
 public class Product {
 	String productID;

@@ -1,17 +1,16 @@
-package com.fyiernzy.Lab7;
+package Lab7.L7Q5;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Collections;
+
+import Lab7.Generator;
+
 import java.util.ArrayList;
 
-public class L7Q5_ArrayList {
+public class L7Q5D {
 	public static void main(String[] args) {
-		String path = "../WIX1002/io_files/Lab07/person.dat";
-		
-		try (ObjectInputStream input = new ObjectInputStream(new FileInputStream(path))) {
+		try (ObjectInputStream input = new ObjectInputStream(new FileInputStream(Generator.PERSON_FILE))) {
 			final int N = input.readInt();
 			
 		    ArrayList<Person> personList = new ArrayList<Person>();
@@ -25,8 +24,7 @@ public class L7Q5_ArrayList {
 		        System.out.printf(" %-13s %3d %3s \n", person.getName(), person.getAge(), person.getGender());
 
 		} 
-		catch (FileNotFoundException ex) { ex.printStackTrace(); }
-		catch (IOException ex) { ex.printStackTrace(); }
+		catch(Exception ex) {}
 	}
 }
 

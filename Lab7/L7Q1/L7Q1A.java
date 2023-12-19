@@ -1,43 +1,27 @@
-package com.fyiernzy.Lab7;
+package Lab7.L7Q1;
 
 import java.io.*;
 import java.util.*;
 
-public class L7Q1_V2 {
+import Lab7.Generator;
+
+public class L7Q1A {
 	public static void main(String[] args) {
-		String binFile = "../WIX1002/io_files/coursename.dat";
 		Scanner scanner = new Scanner(System.in);
 		StringBuilder code = new StringBuilder();
 		
-		generateFile(binFile);
-		
 		while(true) {
 			System.out.print("Enter the course code (enter q to quit): ");
-			
 			code = code.append(scanner.nextLine());
 			
 			if (code.charAt(0) == 'q')
 				break;	
 			
-			checkCode(code.toString(), binFile);
+			checkCode(code.toString(), Generator.COURSE_FILE);
 			code.setLength(0);
 		}
 		
 		scanner.close();
-	}
-
-	
-	public static void generateFile(String toFile) {
-		try (ObjectOutputStream writer = new ObjectOutputStream(new FileOutputStream(toFile))) {
-			
-			writer.writeObject("WXES1116,Programming I");
-			writer.writeObject("WXES1115,Data Structure");
-			writer.writeObject("WXES1110,Operating System");
-			writer.writeObject("WXES1112,Computing Mathematics I");
-			writer.flush();
-	
-		} catch (Exception ex) { ex.printStackTrace(); }
-		
 	}
 	
 	public static void checkCode(String code, String fromFile) {
@@ -52,7 +36,5 @@ public class L7Q1_V2 {
 		
 		catch (EOFException ex) { System.out.println("Course not found"); } 
 		catch (Exception ex) { }
-		
 	}
-
 }
