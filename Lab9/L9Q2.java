@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab9;
+package Lab9;
 
 import java.io.*;
 import java.util.HashMap;
@@ -33,8 +33,7 @@ class Student extends PersonProfile {
 	
 	Student(String name, char gender, String date, String file) {
 		super(name, gender, date);
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(file));
+		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			String code = "";
 			while((code = reader.readLine()) != null) {
 				courseList.put(code, new Course(code, reader.readLine(), 
@@ -42,10 +41,7 @@ class Student extends PersonProfile {
 						Integer.parseInt(reader.readLine()), 
 						Integer.parseInt(reader.readLine())));
 			}
-			reader.close();
-		} catch (FileNotFoundException ex) { 
-			ex.printStackTrace(); 
-		} catch (IOException ex) {
+		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 	}
@@ -123,5 +119,4 @@ class Course {
 	public String getGrade() {
 		return this.grade;
 	}
-	
 }

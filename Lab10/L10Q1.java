@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab10;
+package Lab10;
 
 public class L10Q1 {
 	public static void main(String[] args) {

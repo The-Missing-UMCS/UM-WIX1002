@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab9;
+package Lab9;
 
 // Reference code: 
 public class L9Q4 {

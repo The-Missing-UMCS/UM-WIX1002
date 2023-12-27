@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab8;
+package Lab8;
 
 import java.util.*;
 import java.util.Random;

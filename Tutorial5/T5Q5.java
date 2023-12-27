@@ -21,5 +21,8 @@ public class T5Q5 {
 		for(int i = sentence.length() - 1; i >= 0; i--) {
 			System.out.print(arr[i]);
 		}
+
+		// Method 3
+		System.out.println(new StringBuilder(sentence).reverse().toString());
 	}
 }

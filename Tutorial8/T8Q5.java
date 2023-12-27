@@ -1,4 +1,4 @@
-package com.fyiernzy.Tutorial8;
+package Tutorial8;
 
 import java.util.ArrayList;
 

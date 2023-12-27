@@ -1,4 +1,4 @@
-package com.fyiernzy.Tutorial9;
+package Tutorial9;
 
 public class T9Q3 {
 	

@@ -1,4 +1,4 @@
-package com.fyiernzy.Tutorial10;
+package Tutorial10;
 
 public class L10T1 {
 	public static void main(String[] args) {

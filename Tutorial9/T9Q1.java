@@ -1,4 +1,4 @@
-package com.fyiernzy.Tutorial9;
+package Tutorial9;
 
 public class T9Q1 {
 	public static void main(String[] args) {

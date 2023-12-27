@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab8;
+package Lab8;
 
 import java.util.Scanner;
 
@@ -12,16 +12,18 @@ class Fraction {
 	int numerator;
 	int denominator;
 	
+	Fraction() { }
+
 	Fraction(int numerator, int denominator) {
 		this.numerator = numerator;
 		this.denominator = denominator;
 	}
 	
-	Fraction() {
+	public void getInput() {
 		Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the numerator (integer): "); this.numerator = sc.nextInt();
-        System.out.print("Enter the denominator (integer): "); this.denominator = sc.nextInt();
-        sc.close();
+		System.out.print("Enter the numerator (integer): "); this.numerator = sc.nextInt();
+		System.out.print("Enter the denominator (integer): "); this.denominator = sc.nextInt();
+		sc.close();
 	}
 	
 	public void setNumerator(int n) {
@@ -40,9 +42,8 @@ class Fraction {
 		return this.denominator;
 	}
 	
-	public int findGCD(int x, int y) {		
-		if (y == 0) return x;
-		else return findGCD(y, x % y);
+	public int findGCD(int x, int y) {	
+		return y == 0 ? x : findGCD(y, x % y);
 	}
 	
 	public int getGCD() {
@@ -55,6 +56,6 @@ class Fraction {
 	}
 	
 	public void showSimplestFraction() {
-		System.out.println("Simpest Fraction: " + getSimplestFraction());
+		System.out.println("Simplest Fraction: " + getSimplestFraction());
 	}
 }

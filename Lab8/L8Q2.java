@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab8;
+package Lab8;
 
 public class L8Q2 {
 	public static void main(String[] args) {
@@ -10,10 +10,10 @@ public class L8Q2 {
 }
 
 class BankAccount {
-	private String name;
-	private String ic;
-	private String passport;
-	private double balance;
+	String name;
+	String ic;
+	String passport;
+	double balance;
 	
 	BankAccount(String name, String ic, String passport, double deposit) {
 		this.name = name;

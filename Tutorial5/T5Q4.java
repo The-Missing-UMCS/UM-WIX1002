@@ -10,10 +10,11 @@ public class T5Q4 {
 		scanner.close();
 		
 		int counter = 0;
-		for(int i = 0; i < arr.length; i++) {
+		for(int i = 0; i < arr.length; i++)
 			if (arr[i].equals("the"))
 				counter++;
-		}
-		System.out.println("The occurence of word 'the' = " + counter);
+		
+		System.out.println("The occurrence of word 'the' = " + counter);
+
 	}
 }

@@ -1,4 +1,4 @@
-package com.fyiernzy.Tutorial8;
+package Tutorial8;
 
 public class T8Q1 {
 	public static void main(String[] args) {

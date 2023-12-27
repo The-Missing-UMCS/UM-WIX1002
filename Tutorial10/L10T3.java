@@ -1,4 +1,4 @@
-package com.fyiernzy.Tutorial10;
+package Tutorial10;
 
 import java.util.Arrays;
 

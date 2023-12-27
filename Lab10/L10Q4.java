@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab10;
+package Lab10;
 
 import java.time.LocalDateTime;
 import java.util.*;
@@ -34,7 +34,6 @@ class Appointment implements Searchable {
 	LocalDateTime dateStartTime;
 	LocalDateTime dateEndTime;
 	
-
 	private Appointment(LocalDateTime dateStartTime, LocalDateTime dateEndTime) {
 		this.dateStartTime = dateStartTime;
 		this.dateEndTime = dateEndTime;
@@ -52,7 +51,6 @@ class Appointment implements Searchable {
 	public static boolean makeAppointment(int year, int month, int day, int startTime, int endTime, boolean enabled) {
 		LocalDateTime newStartTime = LocalDateTime.of(year, month, day, startTime, 0);
 		LocalDateTime newEndTime = LocalDateTime.of(year, month, day, endTime, 0);
-		String message;
 		
 		Iterator<Appointment> it = appointmentList.iterator();
 		
@@ -111,7 +109,6 @@ class Appointment implements Searchable {
 	public static void saveAppointment() {
 		try(PrintWriter writer = new PrintWriter(FILE)) {
 			Iterator<Appointment> it = appointmentList.iterator();
-			StringBuilder sb = new StringBuilder();
 			
 			while(it.hasNext()) {
 				Appointment appointment = it.next();
@@ -158,5 +155,4 @@ class Appointment implements Searchable {
 			return (a1.getStartTime().isAfter(a2.getStartTime()) ? 1 : -1);
 		}
 	}
-	
 }

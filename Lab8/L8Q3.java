@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab8;
+package Lab8;
 
 public class L8Q3 {
 	public static void main(String[] args) {

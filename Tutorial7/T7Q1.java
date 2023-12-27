@@ -1,4 +1,4 @@
-package com.fyiernzy.Tutorial7;
+package Tutorial7;
 
 import java.io.*;
 

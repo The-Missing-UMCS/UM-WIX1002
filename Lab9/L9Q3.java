@@ -1,4 +1,4 @@
-package com.fyiernzy.Lab9;
+package Lab9;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
