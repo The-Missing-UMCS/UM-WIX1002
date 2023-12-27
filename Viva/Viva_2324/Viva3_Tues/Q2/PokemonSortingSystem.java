@@ -20,8 +20,7 @@ public class PokemonSortingSystem {
 
     public String[] determineWinner(String opponentName, Pokemon[] pokemonList) {
         Pokemon opponent = findOpponent(opponentName, pokemonList);
-        if (opponent == null)
-            return new String[0];
+        if (opponent == null) return new String[0];
         List<Pokemon> winners = findWinners(pokemonList, opponent);
         return formatResults(winners, true);
     }
@@ -51,7 +50,6 @@ public class PokemonSortingSystem {
                 if (result[i] == null)
                     result[i] = "no Pokemon";
         }
-
         return result;
     }
 
