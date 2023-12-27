@@ -1,4 +1,4 @@
-package PastYear.PastYear2016.Semester1.Q5;
+package PastYear2016.Semester1.Q5;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package PastYear.PastYear2016.Semester1;
+package PastYear2016.Semester1;
 
 import java.util.Scanner;
 import java.io.FileInputStream;

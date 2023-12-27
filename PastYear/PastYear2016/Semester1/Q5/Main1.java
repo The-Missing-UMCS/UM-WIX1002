@@ -1,9 +1,9 @@
-package PastYear.PastYear2016.Semester1.Q5;
+package PastYear2016.Semester1.Q5;
 
 import java.util.List;
 
-import PastYear.PastYear2016.Semester1.Q5.Purchase.Day;
-import PastYear.PastYear2016.Semester1.Q5.Purchase.PurchaseType;
+import PastYear2016.Semester1.Q5.Purchase.Day;
+import PastYear2016.Semester1.Q5.Purchase.PurchaseType;
 
 public class Main1 {
     public static void main(String[] args) {

@@ -1,5 +1,4 @@
-package PastYear2016.S2;
-
+package PastYear2016.Semester2;
 
 public class Q6 {
 	public static void main(String[] args) {
@@ -16,9 +15,5 @@ public class Q6 {
         System.out.println("The monthly interest rate is: " + acc_b.getMonthlyInterestRate());
         acc_b.deposit(1500);
         acc_b.withdraw(500);
-        
-       
-        
-        
 	}
 }

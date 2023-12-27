@@ -1,7 +1,6 @@
 package PastYear2019.Q4;
 
 import java.io.*;
-import java.util.Arrays;
 
 public class Q4 {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package PastYear2016.S2;
+package PastYear2016.Semester2;
 
 import java.util.Random;
 public class Q5 {

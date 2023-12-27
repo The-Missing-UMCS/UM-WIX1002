@@ -1,4 +1,4 @@
-package PastYear2016.S2;
+package PastYear2016.Semester2;
 
 public class Tester {
 	public static void main(String[] args) {

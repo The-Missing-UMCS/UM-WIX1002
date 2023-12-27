@@ -1,4 +1,4 @@
-package PastYear2019.Q5;
+package PastYear2020.Q5;
 
 public class SpecialDelivery extends Delivery {
     private final boolean isWeekend;

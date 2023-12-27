@@ -1,4 +1,4 @@
-package PastYear2016.S2;
+package PastYear2016.Semester2;
 
 import static java.lang.Math.*;
 public class Q4 {
