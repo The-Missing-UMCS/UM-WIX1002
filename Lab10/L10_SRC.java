@@ -5,7 +5,7 @@ import java.io.*;
 public class L10_SRC {
 	public static void main(String[] args) {
 		try {
-			PrintWriter writer = new PrintWriter("./src/com/fyiernzy/Lab10/io_files/plainText.txt");
+			PrintWriter writer = new PrintWriter("C:\\Users\\User\\Desktop\\plainText.txt");
 			writer.print(
 					"At least 16 people including children have been killed after a landslide enveloped a holiday campsite in "
 					+ "Malaysia's Selangor state, officials say. Families were sleeping in their tents when a landslide"

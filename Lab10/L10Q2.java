@@ -20,7 +20,7 @@ interface MessageEncoder {
 class SubstitutionCipher implements MessageEncoder {
 	String inputFileName;
 	String outputFileName;
-	final String PATH = "./src/com/fyiernzy/Lab10/io_files/"; // Can be replaced
+	final String PATH = "C:\\Users\\User\\Desktop\\"; // Can be replaced
 	int shiftKey;
 	
 	SubstitutionCipher(String inputFileName, String outputFileName, int shiftKey) {
@@ -36,7 +36,6 @@ class SubstitutionCipher implements MessageEncoder {
 			String line = "";
 			while((line = reader.readLine()) != null) 
 				sb.append(line + "\n");
-			
 		} catch (Exception ex) { ex.printStackTrace(); }
 		
 		return sb;

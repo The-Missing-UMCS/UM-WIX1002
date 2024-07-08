@@ -19,7 +19,7 @@ public class L10Q3 {
 class ShuffleCipher implements MessageEncoder {
 	String inputFileName;
 	String outputFileName;
-	final String PATH = "./src/com/fyiernzy/Lab10/io_files/"; // Can be replaced
+	final String PATH = "C:\\Users\\User\\Desktop\\"; // Can be replaced
 	int shuffleCount;
 	
 	ShuffleCipher(String inputFileName, String outputFileName, int count) {
@@ -90,13 +90,18 @@ class ShuffleCipher implements MessageEncoder {
 		StringBuilder sb = new StringBuilder();
 		
 		int length = (str.length() / 2) * 2;
+
+		//abc123
+		//a1b2dc3
+
+		// a - 0, b = 2, c = 4
+		// a b c 1 2 3
 		
 		for(int i = 0; i < length; i += 2) 
-			sb.append(str.charAt(i));
+			sb.append(str.charAt(i)); 
 			
 		for(int i = 1; i < length; i += 2) 
 			sb.append(str.charAt(i));
-			
 
 		sb.append((str.length() % 2 == 1) ? str.charAt(str.length() - 1) : "");
 		
