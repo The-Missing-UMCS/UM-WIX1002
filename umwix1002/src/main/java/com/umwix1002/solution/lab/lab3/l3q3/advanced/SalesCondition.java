@@ -31,6 +31,4 @@ public enum SalesCondition {
             .map(SalesCondition::getCommission)
             .orElseThrow(() -> new IllegalArgumentException("No commission found for volume " + volume));
     }
-
-
 }

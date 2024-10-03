@@ -38,6 +38,12 @@
             <artifactId>annotations</artifactId>
             <version>23.0.0</version> <!-- Use the latest version -->
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+        </dependency>
     </dependencies>
 
 </project>
