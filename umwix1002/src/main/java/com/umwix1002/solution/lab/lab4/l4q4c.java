@@ -46,7 +46,7 @@ public class l4q4c {
      * @see java.time.YearMonth
      * @see java.time.DayOfWeek
      * @see java.time.Month
-     * @see com.umwix1002.solution.lab.CommonConstant
+     * @see CommonConstant
      */
 
     public static void displayAtYearMonth(@NotNull YearMonth yearMonth) {

@@ -1,89 +1,106 @@
 package com.umwix1002.solution.lab.lab5;
 
 import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.CommonUtils;
 
 import java.util.Arrays;
 import java.util.Random;
 
+import static com.umwix1002.solution.lab.CommonConstant.ONE;
+import static com.umwix1002.solution.lab.CommonConstant.ZERO;
+
 /**
- * This class demonstrates different methods to transpose a 3x3 integer matrix.
- * Refer to <a href="https://github.com/LimJY03/WIX1002_UM/blob/main/Lab%2005/L5Q4.java">L5Q4.java | Lim JY</a> for alternative solutions.
- * 
+ * This class demonstrates different methods to transpose a square matrix.
+ * It only works for square matrices; for non-square matrices, it throws an {@link IllegalArgumentException}.
+ *
  * @author Ng Zhi Yang
  */
 public class l5q4 {
     public static void main(String[] args) {
-        int[][] matrix = getIntMatrix(3, 1, 9);
+        int[][] matrix = getIntMatrix(4, 1, 9);
         printIntMatrix(matrix);
-
-        int[][] transpose1 = transposeIntMatrixByHardCoding(matrix);
+        
+        int[][] transpose1 = transposeIntMatrixByLooping(matrix);
         printIntMatrix(transpose1);
         
-        int[][] transpose2 = transposeIntMatrixByLooping(matrix);
+        int[][] transpose2 = transposeIntMatrixByPattern(matrix);
         printIntMatrix(transpose2);
-        
-        int[][] transpose3 = transposeIntMatrixByPattern(matrix);
-        printIntMatrix(transpose3);
     }
-    
+
+    /**
+     * Transposes a square matrix by swapping its elements along the diagonal.
+     * This method modifies the copied matrix in place without changing the original.
+     *
+     * @param matrix the matrix to transpose
+     * @return a new matrix that is the transposed version of the input matrix
+     * @throws IllegalArgumentException if the matrix is not square
+     */
     public static int[][] transposeIntMatrixByPattern(int[][] matrix) {
-        int tmp; int n;
-        int[][] result = copy(matrix);
-        for(int i = 0; i < result.length / 2; i++) {
-            for(int j = i; j < result[i].length - 1 - i; j++) {
-                n = result[i].length;
-                tmp = result[i][j];
-                result[i][j] = result[j][n - i - 1];
-                result[j][n - i - 1] = result[n - i - 1][n - j - 1];
-                result[n - i - 1][n - j - 1] = result[n - j - 1][i];
-                result[n - j - 1][i] = tmp;
+        CommonUtils.checkIfSquareMatrix(matrix);
+        int[][] result = deepCopy(matrix);
+        for (int row = ZERO; row < matrix.length; row++) {
+            for (int col = row + ONE; col < matrix.length; col++) {
+                int tmp = result[row][col];
+                result[row][col] = result[col][row];
+                result[col][row] = tmp;
             }
         }
         return result;
     }
-    
+
+    /**
+     * Transposes a square matrix by looping through its elements.
+     * This method creates a new matrix where the rows of the original become the columns.
+     *
+     * @param matrix the matrix to transpose
+     * @return a new matrix that is the transposed version of the input matrix
+     * @throws IllegalArgumentException if the matrix is not square
+     */
     public static int[][] transposeIntMatrixByLooping(int[][] matrix) {
+        CommonUtils.checkIfSquareMatrix(matrix);
         int[][] result = new int[matrix.length][matrix[0].length];
-        for(int i = CommonConstant.ZERO; i < result.length; i++) {
-            for(int j = result.length - CommonConstant.ZERO; j >= CommonConstant.ZERO; j--){
+        for(int i = ZERO; i < result.length; i++) {
+            for(int j = result.length - ONE; j >= ZERO; j--){
                 result[j][i] = matrix[i][j];
             }
         }
         return result;
     }
-    
-    public static int[][] transposeIntMatrixByHardCoding(int[][] matrix) {
-        int[][] copy = copy(matrix);
-        int[][] result = copy(matrix);
 
-        // Corner
-        result[0][0] = copy[2][0];
-        result[2][0] = copy[2][2];
-        result[2][2] = copy[0][2];
-        result[0][2] = copy[0][0];
-
-        // Side
-        result[0][1] = copy[1][0];
-        result[1][0] = copy[2][1];
-        result[2][1] = copy[1][2];
-        result[1][2] = copy[0][1];
-        
-        return result;
-    }
-
-    public static int[][] copy(int[][] src) {
+    /**
+     * Creates a deep copy of the provided 2D array (matrix).
+     * This ensures that modifications to the copy do not affect the original array.
+     *
+     * @param src the matrix to copy
+     * @return a new matrix that is a deep copy of the input matrix
+     */
+    public static int[][] deepCopy(int[][] src) {
         return Arrays.stream(src).map(int[]::clone).toArray(int[][]::new);
-        // https://www.techiedelight.com/create-copy-of-2d-array-java/
     }
-    
+
+    /**
+     * Generates a square matrix of a specified size filled with random integers 
+     * between the specified minimum (inclusive) and maximum (exclusive) values.
+     *
+     * @param size the number of rows and columns in the square matrix
+     * @param min the minimum value for the random integers
+     * @param max the maximum value for the random integers
+     * @return a square matrix populated with random integers
+     */
     public static int[][] getIntMatrix(int size, int min, int max) {
         int[][] matrix = new int[size][size];
-        for(int i = CommonConstant.ZERO; i < matrix.length; i++) {
+        for(int i = ZERO; i < matrix.length; i++) {
             matrix[i] = new Random().ints(size, min, max).toArray();
         }
         return matrix;
     }
-    
+
+    /**
+     * Prints the elements of a 2D array (matrix) to the console in a readable format.
+     * Each row of the matrix is printed on a new line.
+     *
+     * @param matrix the matrix to print
+     */
     public static void printIntMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int col : row) {
@@ -91,5 +108,6 @@ public class l5q4 {
             }
             System.out.println();
         }
+        System.out.println();
     }
 }

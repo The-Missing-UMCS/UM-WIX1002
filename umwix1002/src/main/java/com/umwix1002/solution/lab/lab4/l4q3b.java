@@ -1,6 +1,5 @@
 package com.umwix1002.solution.lab.lab4;
 
-import com.umwix1002.solution.lab.CommonConstant;
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 
 import java.util.Scanner;
