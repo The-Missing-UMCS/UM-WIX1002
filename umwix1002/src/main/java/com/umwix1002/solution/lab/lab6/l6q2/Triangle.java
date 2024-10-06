@@ -10,6 +10,11 @@ public class Triangle extends Shape {
         super(size);
     }
 
+    @Override
+    protected boolean[][] initShapeArray() {
+        return new boolean[getSize()][getSize() * TWO];
+    }
+
     /**
      * Generates a triangular shape stored in a boolean 2D array.
      * The triangle is filled in such a way that each row contains 
@@ -29,21 +34,19 @@ public class Triangle extends Shape {
      * @return a 2D boolean array representing the triangular shape.
      */
     @Override
-    public boolean[][] getShape() {
-        int rowNum = shape.length;
-        int colNum = shape[0].length;
+    public boolean[][] getShapeArray() {
+        int rowNum = getSize();
         
-        for(int row = ONE; row <= rowNum; row++) {
-            int offsetToCenterTriangle = rowNum - row;
+        for(int row = ZERO; row < rowNum; row++) {
+            int col = rowNum - row - ONE;
+            int count = ZERO;
 
-            // Increment by TWO to account for spaces between each 'true' value.
-            // Since row and col start at ONE, we subtract ONE for 0-based indexing.
-            for(int col = ONE; col <= colNum; col += TWO) {
-                boolean[] currentRow = shape[row - ONE];
-                int index = col - ONE + offsetToCenterTriangle;
-                currentRow[index] = true;
+            while(count <= row) {
+                shapeArray[row][col] = true;
+                col += TWO;
+                count++;
             }
         }
-        return shape;
+        return shapeArray;
     }
 }
