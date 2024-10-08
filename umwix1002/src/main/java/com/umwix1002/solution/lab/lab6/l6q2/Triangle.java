@@ -38,14 +38,7 @@ public class Triangle extends Shape {
         int rowNum = getSize();
         
         for(int row = ZERO; row < rowNum; row++) {
-            int col = rowNum - row - ONE;
-            int count = ZERO;
-
-            while(count <= row) {
-                shapeArray[row][col] = true;
-                col += TWO;
-                count++;
-            }
+            fill(getSize() - row - ONE, row + ONE, row);
         }
         return shapeArray;
     }
