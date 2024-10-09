@@ -19,7 +19,7 @@ public class l7q6 {
         Map<String, Product> productList = new HashMap<>();
         List<String> productLines = Files.readAllLines(Path.of(Properties.PROJECT_ROUTE + "/lab7/io_files/product.txt"));
         for (String line : productLines) {
-            String[] info = line.split(",");
+            String[] info = line.split(CommonConstant.COMMA);
             productList.put(info[0], new Product(info[0], info[1], Double.parseDouble(info[2])));
         }
         
