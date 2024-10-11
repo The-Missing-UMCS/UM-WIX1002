@@ -1,7 +1,7 @@
 package com.umwix1002.solution.lab.lab5;
 
 import com.umwix1002.solution.lab.CommonConstant;
-import com.umwix1002.solution.lab.CommonUtils;
+import com.umwix1002.solution.lab.util.CommonUtils;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -12,7 +12,7 @@ import java.util.Random;
 public class l4q8 {
     public static void main(String[] args) {
         int n = new Random().nextInt(100);
-        System.out.printf("First %d prime number%s:\n", n, (n > CommonConstant.ONE) ? "s" : CommonConstant.EMPTY_STRING);
+        System.out.printf("First %d prime number%s:\n", n, (n > CommonConstant.ONE) ? "s" : CommonConstant.BLANK);
         System.out.println(getFirstNPrimeNumbers(n));
     }
 

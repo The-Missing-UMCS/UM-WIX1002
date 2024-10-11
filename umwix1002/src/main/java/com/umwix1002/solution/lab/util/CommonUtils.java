@@ -1,4 +1,4 @@
-package com.umwix1002.solution.lab;
+package com.umwix1002.solution.lab.util;
 
 import static com.umwix1002.solution.lab.CommonConstant.ZERO;
 

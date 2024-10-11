@@ -60,14 +60,14 @@ public class l4q4c {
             .map(day -> String.format(pattern, day))
             .toArray(String[]::new);
         
-        String header = String.join(CommonConstant.EMPTY_STRING, daysOfWeek);
+        String header = String.join(CommonConstant.BLANK, daysOfWeek);
         
         Month monthEnum = yearMonth.getMonth();
         System.out.println(monthEnum.name() + CommonConstant.SPACE + yearMonth.getYear());
         System.out.println(header);
         int firstDayOfWeek = yearMonth.atDay(CommonConstant.ONE).getDayOfWeek().getValue() - CommonConstant.ONE;
         for (int i = 0; i < firstDayOfWeek; i++) {
-            System.out.printf(pattern, CommonConstant.EMPTY_STRING);
+            System.out.printf(pattern, CommonConstant.BLANK);
         }
         for (int i = CommonConstant.ONE; i <= 31; i++) {
             System.out.printf(pattern, i);

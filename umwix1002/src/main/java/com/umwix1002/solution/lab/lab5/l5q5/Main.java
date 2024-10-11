@@ -27,12 +27,12 @@ public class Main {
             SearchResult binarySearchResult = binarySearch(randomNumbers, target);
             
             System.out.printf("%d %s found. Binary search - %d loops(s)\n", 
-                target, binarySearchResult.getResult() == null ? "not" : CommonConstant.EMPTY_STRING, 
+                target, binarySearchResult.getResult() == null ? "not" : CommonConstant.BLANK, 
                 binarySearchResult.getNumberOfLoops());
             
             SearchResult linearSearchResult = linearSearch(randomNumbers, target);
             System.out.printf("%d %s found. Linear search - %d loops(s)\n", 
-                    target, linearSearchResult.getResult() == null ? "not" : CommonConstant.EMPTY_STRING, 
+                    target, linearSearchResult.getResult() == null ? "not" : CommonConstant.BLANK, 
                     linearSearchResult.getNumberOfLoops());
         }
     }

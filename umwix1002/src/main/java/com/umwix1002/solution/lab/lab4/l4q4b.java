@@ -40,7 +40,7 @@ public class l4q4b {
 
         int firstDayOfMonth = getFirstDayOfMonth(year, firstDayOfYear, month);
         for (int i = CommonConstant.ZERO; i < firstDayOfMonth; i++) {
-            System.out.printf("%4s", CommonConstant.EMPTY_STRING);
+            System.out.printf("%4s", CommonConstant.BLANK);
         }
         for (int i = CommonConstant.ONE; i <= 31; i++) {
             System.out.printf("%4s", i);

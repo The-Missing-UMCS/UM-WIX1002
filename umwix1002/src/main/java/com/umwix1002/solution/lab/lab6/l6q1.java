@@ -1,14 +1,9 @@
 package com.umwix1002.solution.lab.lab6;
 
 import com.umwix1002.solution.lab.CommonConstant;
-import com.umwix1002.solution.lab.CommonUtils;
+import com.umwix1002.solution.lab.util.CommonUtils;
 
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-
-import static com.umwix1002.solution.lab.CommonConstant.COMMA;
-import static com.umwix1002.solution.lab.CommonConstant.SPACE;
 
 /**
  * @author Ng Zhi Yang
