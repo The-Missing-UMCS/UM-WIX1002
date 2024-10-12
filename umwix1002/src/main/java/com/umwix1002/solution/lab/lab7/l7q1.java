@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab7;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 
 import java.io.IOException;
 import java.nio.file.Files;

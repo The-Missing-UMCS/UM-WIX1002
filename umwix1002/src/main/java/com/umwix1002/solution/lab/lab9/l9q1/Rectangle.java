@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab9.l9q1;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import lombok.Getter;
 import lombok.ToString;
 

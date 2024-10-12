@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab5.l5q5;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 
 import java.util.*;
 

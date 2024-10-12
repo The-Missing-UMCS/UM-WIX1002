@@ -1,13 +1,13 @@
 package com.umwix1002.solution.lab.lab5;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import com.umwix1002.solution.lab.util.CommonUtils;
 
 import java.util.Arrays;
 import java.util.Random;
 
-import static com.umwix1002.solution.lab.CommonConstant.ONE;
-import static com.umwix1002.solution.lab.CommonConstant.ZERO;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ONE;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
 
 /**
  * This class demonstrates different methods to transpose a square matrix.

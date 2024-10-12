@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import static com.umwix1002.solution.lab.CommonConstant.ZERO;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
 
 public class l6q6 {
     public static void main(String[] args) {

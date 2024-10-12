@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab8.l8q1;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import lombok.*;
 
 import java.util.Random;

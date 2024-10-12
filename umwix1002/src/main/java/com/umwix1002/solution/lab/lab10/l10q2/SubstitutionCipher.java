@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab10.l10q2;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import lombok.Data;
 
 import java.util.function.Function;

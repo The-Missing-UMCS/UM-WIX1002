@@ -1,13 +1,13 @@
 package com.umwix1002.solution.lab.lab10.l10q3;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import com.umwix1002.solution.lab.lab10.l10q2.MessageEncoder;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.function.Function;
 
-import static com.umwix1002.solution.lab.CommonConstant.*;
+import static com.umwix1002.solution.lab.constants.CommonConstant.*;
 
 /**
  * @author Ng Zhi Yang

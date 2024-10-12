@@ -1,7 +1,6 @@
 package com.umwix1002.solution.lab.lab8.l8q5;
 
-import com.umwix1002.solution.lab.CommonConstant;
-import lombok.AllArgsConstructor;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import lombok.Data;
 
 /**

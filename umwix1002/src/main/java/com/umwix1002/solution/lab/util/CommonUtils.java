@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.util;
 
-import static com.umwix1002.solution.lab.CommonConstant.ZERO;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
 
 /**
  * @author Ng Zhi Yang

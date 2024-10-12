@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab6.l6q2;
 
-import static com.umwix1002.solution.lab.CommonConstant.*;
+import static com.umwix1002.solution.lab.constants.CommonConstant.*;
 
 public class Diamond extends Shape {
     public Diamond(int size) {

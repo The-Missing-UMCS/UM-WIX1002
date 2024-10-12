@@ -3,8 +3,8 @@ package com.umwix1002.solution.lab.lab6.l6q2;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-import static com.umwix1002.solution.lab.CommonConstant.ONE;
-import static com.umwix1002.solution.lab.CommonConstant.ZERO;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ONE;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
 
 @Data
 @Accessors(chain = true)

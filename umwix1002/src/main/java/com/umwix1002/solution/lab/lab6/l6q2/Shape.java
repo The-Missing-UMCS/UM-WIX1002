@@ -2,7 +2,7 @@ package com.umwix1002.solution.lab.lab6.l6q2;
 
 import lombok.*;
 
-import static com.umwix1002.solution.lab.CommonConstant.*;
+import static com.umwix1002.solution.lab.constants.CommonConstant.*;
 
 /**
  * @author Ng Zhi Yang

@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab8.l8q7;
 
-import com.umwix1002.solution.lab.CommonConstant;
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Getter;

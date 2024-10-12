@@ -1,4 +1,4 @@
-package com.umwix1002.solution.lab;
+package com.umwix1002.solution.lab.constants;
 
 /**
  * @author Ng Zhi Yang
@@ -13,6 +13,8 @@ public class CommonConstant {
     public static final String BLANK = "";
     public static final String SPACE = " ";
     public static final String COMMA = ",";
+    public static final String SLASH = "/";
+    public static final String DASH = "-";
     
     public static final Integer NOT_FOUND = NEGATIVE_ONE;
 }
