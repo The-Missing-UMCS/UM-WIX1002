@@ -9,11 +9,17 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+import static com.umwix1002.solution.lab.Properties.*;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ONE;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
+
 /**
  * Get the .dat file from Spectrum. The current one is malformed.
+ *
+ * @author Ng Zhi Yang
  */
 public class l7q1 {
-    private static final String COURSE_FILE = "src/main/java/com/umwix1002/solution/lab/lab7/io_files/coursename.dat";
+    private static final String COURSE_FILE = chainDir(LAB7, IO_FILES, "coursename.dat");
 
     public static void main(String[] args) throws IOException {
         Map<String, String> courseList = getCourseList(COURSE_FILE);
@@ -22,7 +28,7 @@ public class l7q1 {
             while (true) {
                 System.out.print("Enter the course code (enter q to quit): ");
                 String courseCode = scanner.nextLine();
-                if (courseCode.charAt(0) == 'q') {
+                if (courseCode.charAt(ZERO) == 'q') {
                     break;
                 }
                 if (courseList.containsKey(courseCode)) {
@@ -39,7 +45,7 @@ public class l7q1 {
             return lines
                 .map(line -> line.split(CommonConstant.COMMA))
                 .filter(courseInfo -> courseInfo.length == CommonConstant.TWO)
-                .collect(Collectors.toMap(courseInfo -> courseInfo[0], courseInfo -> courseInfo[1]));
+                .collect(Collectors.toMap(courseInfo -> courseInfo[ZERO], courseInfo -> courseInfo[ONE]));
         }
     }
 

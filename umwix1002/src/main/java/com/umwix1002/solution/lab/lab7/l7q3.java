@@ -1,6 +1,5 @@
 package com.umwix1002.solution.lab.lab7;
 
-import com.umwix1002.solution.lab.Properties;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
@@ -8,13 +7,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.stream.Collectors;
 
+import static com.umwix1002.solution.lab.Properties.*;
+
 /**
  * @author Ng Zhi Yang
  */
 public class l7q3 {
     public static void main(String[] args) throws IOException {
-        String fromFile = Properties.PROJECT_ROUTE + "/lab7/io_files/text.txt";
-        String toFile = Properties.PROJECT_ROUTE + "/lab7/output/reverse.txt";
+        String fromFile = chainDir(PROJECT_ROUTE, LAB7, IO_FILES, "text.txt");
+        String toFile = chainDir(PROJECT_ROUTE, LAB7, IO_FILES, "reverse.txt");
         generateReverseTextFile(fromFile, toFile);
     }
 

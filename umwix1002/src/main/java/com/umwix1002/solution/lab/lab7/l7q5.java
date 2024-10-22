@@ -1,8 +1,8 @@
 package com.umwix1002.solution.lab.lab7;
 
-import com.umwix1002.solution.lab.Properties;
 import com.umwix1002.solution.lab.lab7.helper.Gender;
 import com.umwix1002.solution.lab.lab7.helper.Person;
+import org.apache.commons.math3.exception.ZeroException;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -12,19 +12,26 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import static com.umwix1002.solution.lab.Properties.*;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
+
+/**
+ * @author Ng Zhi Yang
+ */
 public class l7q5 {
+    private static final String FILE = chainDir(LAB7, IO_FILES, "person.dat");
+    
     public static void main(String[] args) throws IOException {
         List<Person> personList = new ArrayList<>();
-
-        try (var input = Files.newInputStream(Path.of(Properties.PROJECT_ROUTE + "/lab7/io_files/person.dat"));
+        try (var input = Files.newInputStream(Path.of(FILE));
             var objectInput = new ObjectInputStream(input)) {
-            final int N = objectInput.readInt();
-
-            for (int i = 0; i < N; i++) {
+            final int n = objectInput.readInt();
+            
+            for (int i = ZERO; i < n; i++) {
                 String name = objectInput.readUTF();
                 int age = objectInput.readInt();
                 char gender = objectInput.readChar();
-                personList.add(new Person(name, age, Gender.getByShortName(gender)));
+                personList.add(new Person(name, age, Gender.getByCode(gender)));
             }
         }
 

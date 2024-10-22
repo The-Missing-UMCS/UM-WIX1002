@@ -16,11 +16,11 @@ public enum Gender {
     FEMALE("FEMALE", 'F');
     
     private final String name;
-    private final Character shortName;
+    private final Character code;
     
-    public static Gender getByShortName(Character shortName) {
+    public static Gender getByCode(Character code) {
         return Arrays.stream(Gender.values())
-            .filter(gender -> gender.getShortName().equals(shortName))
+            .filter(gender -> gender.getCode().equals(code))
             .findFirst()
             .orElse(null);
     }
