@@ -57,6 +57,13 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.36</version> <!-- Check for the latest version -->
         </dependency>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.24.2</version> <!-- Check for the latest version -->
+            <scope>test</scope>
+        </dependency>
         
         <dependency>
             <groupId>ch.qos.logback</groupId>
