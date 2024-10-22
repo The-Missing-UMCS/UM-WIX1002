@@ -2,6 +2,9 @@ package com.umwix1002.solution.lab.lab6;
 
 import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
 
+/**
+ * @author Ng Zhi Yang
+ */
 public class l6q4 {
     public static void main(String[] args) {
         System.out.println(findGCD(24, 8));

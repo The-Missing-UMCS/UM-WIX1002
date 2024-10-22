@@ -1,15 +1,19 @@
 package com.umwix1002.solution.lab.lab6;
 
 import com.umwix1002.solution.lab.constants.CommonConstant;
+import com.umwix1002.solution.lab.util.AssertUtil;
 import com.umwix1002.solution.lab.util.CommonUtils;
 
 import java.util.stream.IntStream;
+
+import static com.umwix1002.solution.lab.constants.CommonConstant.ONE;
+import static com.umwix1002.solution.lab.constants.CommonConstant.TWO;
 
 /**
  * @author Ng Zhi Yang
  */
 public class l6q1 {
-    private static final int START_INCLUSIVE = CommonConstant.ONE;
+    private static final int START_INCLUSIVE = ONE;
     private static final int END_INCLUSIVE = 20;
 
     public static void main(String[] args) {
@@ -30,10 +34,10 @@ public class l6q1 {
      *
      * @param n the positive integer for which to calculate the triangular number
      * @return the triangular number corresponding to the input n
-     * @throws IllegalArgumentException if n is not a positive integer
+     * @throws com.umwix1002.solution.lab.util.exception.NegativeValueException if n is not a positive integer
      */
     public static int triangular(int n) {
-        CommonUtils.checkPositiveInteger(n);
-        return n * (n + CommonConstant.ONE) / 2;
+        AssertUtil.assertNatural(n);
+        return n * (n + ONE) / TWO;
     }
 }

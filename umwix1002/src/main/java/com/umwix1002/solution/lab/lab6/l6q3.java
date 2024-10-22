@@ -1,7 +1,13 @@
 package com.umwix1002.solution.lab.lab6;
 
+import com.umwix1002.solution.lab.util.AssertUtil;
+
+import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.LongStream;
+
+import static com.umwix1002.solution.lab.constants.CommonConstant.TEN;
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
 
 /**
  * This implementation uses {@code long} to accommodate larger numbers. However, if you encounter 
@@ -15,22 +21,28 @@ import java.util.stream.LongStream;
  * @author Ng Zhi Yang
  */
 public class l6q3 {
-    public static void main(String[] args) {
-        try(Scanner sc = new Scanner(System.in)) {
-            long[] arr = new long[10];
-            for(int i = 0; i < 10; i++) {
-                System.out.printf("Enter a number (%d): ", i + 1);
-                arr[i] = sc.nextInt();
-            }
-            LongStream.of(arr).forEach(val -> System.out.printf("input=%15d, reverse=%15d\n", val, reverse(val)));
-        }
-    }
+    private static final int SIZE = 10;
+    private static final int INCLUSIVE_START = 100_000;
+    private static final int EXCLUSIVE_END = 100_000_001;
     
+    public static void main(String[] args) {
+        new Random()
+            .longs(SIZE, INCLUSIVE_START, EXCLUSIVE_END)
+            .forEach(val -> System.out.printf("input=%15d, reverse=%15d\n", val, reverse(val)));
+    }
+
+    /**
+     * Reverse the digits of a given number.
+     * @param val the number to be reversed
+     * @return the reversed number
+     * @throws com.umwix1002.solution.lab.util.exception.NegativeValueException if the number is negative
+     */
     public static long reverse(long val) {
-        long result = 0;
-        while(val != 0) {
-            result = result * 10 + val % 10;
-            val /= 10;
+        AssertUtil.assertPositive(val);
+        long result = ZERO;
+        while(val != ZERO) {
+            result = result * TEN + val % TEN;
+            val /= TEN;
         }
         return result;
     }
