@@ -9,6 +9,7 @@ public class CommonConstant {
     public static final Integer ONE = 1;
     public static final Integer TWO = 2;
     public static final Integer TEN = 10;
+    public static final Integer HUNDRED = 100;
     
     public static final String LINE_BREAK = System.lineSeparator();
     public static final String BLANK = "";

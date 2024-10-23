@@ -23,7 +23,7 @@ public class Properties {
 
     /**
      * Chains the provided directory segments into a single path string.
-     * This is used to avoid confusing use of file separator.
+     * This is used to avoid confusing use fromProperty file separator.
      *
      * @param dirs the directory segments to chain
      * @return the resulting path as a string
