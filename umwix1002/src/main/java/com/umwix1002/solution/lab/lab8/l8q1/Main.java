@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         NumberProperty numberProperty = NumberProperty.builder().size(5).lowerBound(30).isDuplicateAllowed(true).build();
         Number number = Number.fromProperty(numberProperty);
-        NumberPresenter presenter = new NumberPresenter(number);
+        NumberPresenter presenter = new NumberPresenter(number.getNumbers());
         presenter.displayAll();
     }
 }

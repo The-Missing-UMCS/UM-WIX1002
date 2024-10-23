@@ -53,7 +53,7 @@ public class Number {
         this.isDuplicateAllowed = isDuplicateAllowed;
         this.numbers = numbers;
     }
-
+    
     /**
      * Sets the properties of the {@code Number} object using the provided {@code NumberProperty}.
      * This method will regenerate the int[] array based on the new properties.

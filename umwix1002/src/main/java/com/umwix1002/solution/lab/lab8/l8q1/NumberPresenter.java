@@ -16,12 +16,12 @@ import static com.umwix1002.solution.lab.constants.CommonConstant.TWO;
 @Data
 @AllArgsConstructor
 public class NumberPresenter {
-    private Number number;
+    private int[] numbers;
     
     public void displayAll() {
         String pattern = "%-15s: %s%n";
         Map<String, String> map = new LinkedHashMap<>();
-        map.put("Item", Arrays.toString(number.getNumbers()));
+        map.put("Item", Arrays.toString(numbers));
         map.put("Maximum", String.valueOf(getMax().orElse(CommonConstant.NOT_FOUND)));
         map.put("Minimum", String.valueOf(getMin().orElse(CommonConstant.NOT_FOUND)));
         map.put("Average", String.valueOf(getAverage().orElse(CommonConstant.NOT_FOUND)));
@@ -34,35 +34,35 @@ public class NumberPresenter {
     }
 
     public OptionalInt getMax() {
-        return streamOf(number.getNumbers()).max();
+        return streamOf(numbers).max();
     }
 
     public OptionalInt getMin() {
-        return streamOf(number.getNumbers()).min();
+        return streamOf(numbers).min();
     }
 
     public OptionalDouble getAverage() {
-        return streamOf(number.getNumbers()).average();
+        return streamOf(numbers).average();
     }
     
     public int[] getPrime() {
-        return streamOf(number.getNumbers()).filter(MyMathUtil::isPrime).toArray();
+        return streamOf(numbers).filter(MyMathUtil::isPrime).toArray();
     }
 
     public int[] getOdd() {
-        return streamOf(number.getNumbers()).filter(MyMathUtil::isOdd).toArray();
+        return streamOf(numbers).filter(MyMathUtil::isOdd).toArray();
     }
 
     public int[] getEven() {
-        return streamOf(number.getNumbers()).filter(MyMathUtil::isEven).toArray();
+        return streamOf(numbers).filter(MyMathUtil::isEven).toArray();
     }
 
     public int[] getSquare() {
-        return streamOf(number.getNumbers()).map(x -> x * x).toArray();
+        return streamOf(numbers).map(x -> x * x).toArray();
     }
 
     public int[] getPerfectSquare() {
-        return streamOf(number.getNumbers()).filter(this::isPerfectSquare).toArray();
+        return streamOf(numbers).filter(this::isPerfectSquare).toArray();
     }
 
     private boolean isPerfectSquare(int x) {
