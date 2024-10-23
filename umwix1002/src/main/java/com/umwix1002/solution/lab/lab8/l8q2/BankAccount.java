@@ -1,6 +1,7 @@
 package com.umwix1002.solution.lab.lab8.l8q2;
 
 import com.umwix1002.solution.lab.constants.CommonConstant;
+import com.umwix1002.solution.lab.util.AssertUtil;
 import lombok.*;
 
 /**
@@ -17,9 +18,7 @@ public class BankAccount {
     private double balance;
 
     public void deposit(int amount) {
-        if (amount < CommonConstant.ZERO) {
-            throw new IllegalArgumentException("Amount must be positive");
-        }
+        AssertUtil.assertNonNegative(amount, "Amount must be positive");
         balance += amount;
     }
 

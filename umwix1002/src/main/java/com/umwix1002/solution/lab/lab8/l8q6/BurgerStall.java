@@ -1,5 +1,6 @@
 package com.umwix1002.solution.lab.lab8.l8q6;
 
+import com.umwix1002.solution.lab.util.AssertUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -20,9 +21,7 @@ public class BurgerStall {
     }
 
     public void sold(int count) {
-        if (count < 0) {
-            throw new IllegalArgumentException("Count must be positive");
-        }
+        AssertUtil.assertNonNegative(count);
         this.totalSold += count;
         allSales += count;
     }

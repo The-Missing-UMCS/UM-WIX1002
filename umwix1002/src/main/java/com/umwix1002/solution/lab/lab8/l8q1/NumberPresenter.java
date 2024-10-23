@@ -1,11 +1,14 @@
 package com.umwix1002.solution.lab.lab8.l8q1;
 
 import com.umwix1002.solution.lab.constants.CommonConstant;
+import com.umwix1002.solution.lab.util.MyMathUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.*;
 import java.util.stream.IntStream;
+
+import static com.umwix1002.solution.lab.constants.CommonConstant.TWO;
 
 /**
  * @author Ng Zhi Yang
@@ -27,9 +30,7 @@ public class NumberPresenter {
         map.put("Even", Arrays.toString(getEven()));
         map.put("Square", Arrays.toString(getSquare()));
         map.put("Perfect Square", Arrays.toString(getPerfectSquare()));
-        for(Map.Entry<String, String> entry : map.entrySet()) {
-            System.out.printf(pattern, entry.getKey(), entry.getValue());
-        }
+        map.forEach((k, v) -> System.out.printf(pattern, k, v));
     }
 
     public OptionalInt getMax() {
@@ -45,15 +46,15 @@ public class NumberPresenter {
     }
     
     public int[] getPrime() {
-        return streamOf(number.getNumbers()).filter(this::isPrime).toArray();
+        return streamOf(number.getNumbers()).filter(MyMathUtil::isPrime).toArray();
     }
 
     public int[] getOdd() {
-        return streamOf(number.getNumbers()).filter(this::isOdd).toArray();
+        return streamOf(number.getNumbers()).filter(MyMathUtil::isOdd).toArray();
     }
 
     public int[] getEven() {
-        return streamOf(number.getNumbers()).filter(this::isEven).toArray();
+        return streamOf(number.getNumbers()).filter(MyMathUtil::isEven).toArray();
     }
 
     public int[] getSquare() {
@@ -67,32 +68,6 @@ public class NumberPresenter {
     private boolean isPerfectSquare(int x) {
         int sqrt = (int) Math.sqrt(x);
         return sqrt * sqrt == x;
-    }
-
-    private boolean isPrime(int n) {
-        if (n < 2) {
-            return false;
-        }
-        if (n == 2) {
-            return true;
-        }
-        if (n % 2 == 0) {
-            return false;
-        }
-        for(int i = 3; i <= Math.sqrt(n); i += 2) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private boolean isOdd(int n) {
-        return n % 2 != 0;
-    }
-
-    private boolean isEven(int n) {
-        return n % 2 == 0;
     }
     
     private static IntStream streamOf(int[] arr) {

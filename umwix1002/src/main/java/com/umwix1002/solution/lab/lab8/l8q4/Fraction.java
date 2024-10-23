@@ -1,7 +1,11 @@
 package com.umwix1002.solution.lab.lab8.l8q4;
 
+import com.umwix1002.solution.lab.constants.CommonConstant;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+
+import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
+import static com.umwix1002.solution.lab.constants.CommonConstant.SLASH;
 
 /**
  * @author Ng Zhi Yang
@@ -13,7 +17,7 @@ public class Fraction {
     private int denominator;
 
     private int findGCD(int x, int y) {
-        return y == 0 ? x : findGCD(y, x % y);
+        return y == ZERO ? x : findGCD(y, x % y);
     }
 
     public int getGCD() {
@@ -22,11 +26,11 @@ public class Fraction {
 
     public String reduce() {
         int gcd = getGCD();
-        return (numerator / gcd) + "/" + (denominator / gcd);
+        return (numerator / gcd) + SLASH + (denominator / gcd);
     }
 
     @Override
     public String toString() {
-        return numerator + "/" + denominator;
+        return numerator + SLASH + denominator;
     }
 }

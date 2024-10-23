@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab8.l8q7;
 
-import com.umwix1002.solution.lab.constants.CommonConstant;
+import com.umwix1002.solution.lab.util.AssertUtil;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Getter;
@@ -8,6 +8,11 @@ import lombok.Getter;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static com.umwix1002.solution.lab.constants.CommonConstant.*;
+
+/**
+ * @author Ng Zhi Yang
+ */
 @Data
 public class Money {
     private static final int[] NOTES = {100, 50, 10, 5, 1};
@@ -15,29 +20,30 @@ public class Money {
 
     private final int cent;
     private final double amount;
+    
+    // To enhance the performance
+    private boolean isSetup;
 
     @Getter(AccessLevel.PRIVATE)
     private int[] counts = new int[NOTES.length + COINS.length];
 
     Money(Double amount) {
         this.amount = amount;
-        this.cent = round((int) (amount * 100));
+        this.cent = round((int) (amount * HUNDRED));
+        this.isSetup = false;
     }
 
     private static int round(int value) {
-        return ((value + 2) / 5 * 5);
+        return ((value + TWO) / 5 * 5);
     }
 
     public static Money subtract(double m1, double m2) {
-        double value = m1 - m2;
-        if (value < CommonConstant.ZERO) {
-            throw new IllegalArgumentException("m1 must be greater than or equal m2");
-        }
+        AssertUtil.assertNonNegative(m1 - m2, "m1 must be greater than or equal m2");
         return new Money(Math.abs(m1 - m2));
     }
 
     public static Money subtract(Money m1, Money m2) {
-        return Money.subtract(m1.getAmount(), m2.getAmount());
+        return subtract(m1.getAmount(), m2.getAmount());
     }
 
     public static Money add(double m1, double m2) {
@@ -64,47 +70,50 @@ public class Money {
         return add(this, money);
     }
 
-    public String getNotesAndCoins() {
-        return getNotesAndCoins(true, true);
-    }
-
     public String getNotes() {
-        return getNotesAndCoins(true, false);
+        return getNoteString();
     }
 
     public String getCoins() {
-        return getNotesAndCoins(false, true);
+        return getCoinString();
     }
 
-    public String getNotesAndCoins(boolean enableNotes, boolean enableCoins) {
+    public String getNotesAndCoins() {
+        return getNoteString() + getCoinString();
+    }
+
+    private String getNoteString() {
+        return toMoneyString("%d x RM %d", NOTES, ZERO);
+    }
+
+    private String getCoinString() {
+        return toMoneyString("%d x %d cents", COINS, NOTES.length);
+    }
+
+    private String toMoneyString(String format, int[] array, int offset) {
         setupCounts();
         StringBuilder sb = new StringBuilder();
-        if(enableNotes) {
-            String notesOutput = IntStream.range(CommonConstant.ZERO, NOTES.length)
-                .mapToObj(i -> String.format("%d x RM %d", counts[i], NOTES[i]))
-                .collect(Collectors.joining(CommonConstant.LINE_BREAK));
-            sb.append(notesOutput).append(CommonConstant.LINE_BREAK);
-        }
-        if(enableCoins) {
-            String coinsOutput = IntStream.range(CommonConstant.ZERO, COINS.length)
-                .mapToObj(i -> String.format("%d x %d cents", counts[NOTES.length + i], COINS[i]))
-                .collect(Collectors.joining(CommonConstant.LINE_BREAK));
-            sb.append(coinsOutput).append(CommonConstant.LINE_BREAK);
-        }
-        return sb.toString();
+        String output = IntStream.range(ZERO, array.length)
+            .mapToObj(i -> String.format(format, counts[offset + i], array[i]))
+            .collect(Collectors.joining(LINE_BREAK));
+        return sb.append(output).append(LINE_BREAK).toString();
     }
 
     private void setupCounts() {
-        int tmp = cent;
-        
-        for (int i = 0; i < NOTES.length; i++) {
-            counts[i] = tmp / (NOTES[i] * 100);
-            tmp %= (NOTES[i] * 100);
+        if(isSetup) {
+            return ;
         }
-        
-        for (int i = 0; i < COINS.length; i++) {
+        int tmp = cent;
+
+        for (int i = ZERO; i < NOTES.length; i++) {
+            counts[i] = tmp / (NOTES[i] * HUNDRED);
+            tmp %= (NOTES[i] * HUNDRED);
+        }
+
+        for (int i = ZERO; i < COINS.length; i++) {
             counts[NOTES.length + i] = tmp / COINS[i];
             tmp %= COINS[i];
         }
+        isSetup = true;
     }
 }
