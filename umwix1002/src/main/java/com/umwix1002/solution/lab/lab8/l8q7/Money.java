@@ -27,7 +27,7 @@ public class Money {
     @Getter(AccessLevel.PRIVATE)
     private int[] counts = new int[NOTES.length + COINS.length];
 
-    Money(Double amount) {
+    public Money(Double amount) {
         this.amount = amount;
         this.cent = round((int) (amount * HUNDRED));
         this.isSetup = false;
