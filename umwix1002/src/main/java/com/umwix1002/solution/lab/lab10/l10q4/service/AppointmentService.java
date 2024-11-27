@@ -1,5 +1,6 @@
-package com.umwix1002.solution.lab.lab10.l10q4;
+package com.umwix1002.solution.lab.lab10.l10q4.service;
 
+import com.umwix1002.solution.lab.lab10.l10q4.domain.Appointment;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDateTime;

@@ -17,6 +17,18 @@ public class AssertUtil {
     }
 
     /**
+     * Asserts that the specified double value is greater than or equal to zero.
+     *
+     * @param val the double value to check
+     * @throws NegativeValueException if the specified value is less than zero
+     */
+    public static void assertPositive(double val) {
+        if (val < CommonConstant.ZERO) {
+            throw new NegativeValueException("val=" + val + " is less than 0");
+        }
+    }
+
+    /**
      * Asserts that the specified long value is greater than or equal to zero.
      *
      * @param val the long value to check

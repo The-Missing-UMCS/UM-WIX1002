@@ -1,10 +1,13 @@
-package com.umwix1002.solution.lab.lab9.l9q1;
+package com.umwix1002.solution.lab.lab9.l9q1.shape;
 
 import com.umwix1002.solution.lab.constants.CommonConstant;
+import com.umwix1002.solution.lab.lab9.l9q1.ShapeConstant;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 @Getter
+@Setter
 @ToString(callSuper = true)
 public class Rectangle extends Shape {
     private double width;
@@ -14,22 +17,11 @@ public class Rectangle extends Shape {
         super(ShapeConstant.RECTANGLE);
         this.width = width;
         this.height = height;
-        compute();
     }
     
     @Override
     protected void compute() {
         setArea(width * height);
         setPerimeter(CommonConstant.TWO * (width + height));
-    } 
-    
-    public void setWidth(double width) {
-        this.width = width;
-        compute();
-    }
-    
-    public void setHeight(double height) {
-        this.height = height;
-        compute();
     }
 }

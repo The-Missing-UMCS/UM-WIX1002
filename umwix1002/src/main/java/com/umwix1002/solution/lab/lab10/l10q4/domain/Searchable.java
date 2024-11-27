@@ -1,4 +1,4 @@
-package com.umwix1002.solution.lab.lab10.l10q4;
+package com.umwix1002.solution.lab.lab10.l10q4.domain;
 
 import java.time.LocalDateTime;
 

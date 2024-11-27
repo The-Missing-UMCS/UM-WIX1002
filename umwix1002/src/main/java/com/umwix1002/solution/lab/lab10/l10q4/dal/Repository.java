@@ -1,4 +1,6 @@
-package com.umwix1002.solution.lab.lab10.l10q4;
+package com.umwix1002.solution.lab.lab10.l10q4.dal;
+
+import com.umwix1002.solution.lab.lab10.l10q4.domain.Appointment;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

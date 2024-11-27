@@ -1,5 +1,6 @@
-package com.umwix1002.solution.lab.lab10.l10q4;
+package com.umwix1002.solution.lab.lab10.l10q4.util;
 
+import com.umwix1002.solution.lab.lab10.l10q4.domain.Appointment;
 import org.apache.commons.lang3.StringUtils;
 
 import java.time.LocalDate;

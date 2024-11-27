@@ -1,4 +1,4 @@
-package com.umwix1002.solution.lab.lab9.l9q1;
+package com.umwix1002.solution.lab.lab9.l9q1.shape;
 
 import lombok.AccessLevel;
 import lombok.Data;
@@ -15,6 +15,6 @@ public abstract class Shape {
     private final String name;
     private double perimeter;
     private double area;
-    
+
     abstract protected void compute();
 }
