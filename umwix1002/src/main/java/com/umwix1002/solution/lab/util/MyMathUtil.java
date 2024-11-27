@@ -17,7 +17,7 @@ public class MyMathUtil {
      * @return true if the integer is odd, false otherwise
      */
     public static boolean isOdd(int n) {
-        return n % TWO != ZERO;
+        return !isDivisible(n, TWO);
     }
 
     /**
@@ -27,7 +27,7 @@ public class MyMathUtil {
      * @return true if the integer is even, false otherwise
      */
     public static boolean isEven(int n) {
-        return n % TWO == ZERO;
+        return isDivisible(n, TWO);
     }
 
     /**
@@ -42,13 +42,92 @@ public class MyMathUtil {
         return dividend % divisor == ZERO;
     }
 
-    /**
-     * Checks if a given integer is negative.
-     *
-     * @param n the integer to check
-     * @return true if the integer is negative, false otherwise
-     */
     public static boolean isNegative(int n) {
         return n < ZERO;
+    }
+    
+    public static boolean isNegative(long n) {
+        return n < ZERO;
+    }
+
+    public static boolean isNegative(double n) {
+        return n < ZERO;
+    }
+
+    /**
+     * Check if an integer is greater than zero.
+     * @param n the integer to check
+     * @return true if the integer is positive, false otherwise
+     */
+    public static boolean isPositive(int n) {
+        return n > ZERO;
+    }
+
+    /**
+     * Check if a double is greater than zero.
+     * @param n the double to check
+     * @return true if the double is positive, false otherwise
+     */
+    public static boolean isPositive(double n) {
+        return n > ZERO;
+    }
+
+    /**
+     * Check if a long is greater than zero.
+     * @param n the long to check
+     * @return true if the long is positive, false otherwise
+     */
+    public static boolean isPositive(long n) {
+        return n > ZERO;
+    }
+
+    /**
+     * Check if an integer is greater or equal to zero.
+     * @param n the integer to check
+     * @return true if the integer is positive, false otherwise
+     */
+    public static boolean isNonNegative(int n) {
+        return n >= ZERO;
+    }
+
+    /**
+     * Check if a long is greater or equal to zero.
+     * @param n the long to check
+     * @return true if the long is positive, false otherwise
+     */
+    public static boolean isNonNegative(long n) {
+        return n >= ZERO;
+    }
+
+    /**
+     * Check if a double is greater or equal to zero.
+     * @param n the double to check
+     * @return true if the double is positive, false otherwise
+     */
+    public static boolean isNonNegative(double n) {
+        return n >= ZERO;
+    }
+
+    /**
+     * Checks if a given integer is prime.
+     *
+     * @param n the integer to check
+     * @return true if the integer is prime, false otherwise
+     */
+    public static boolean isPrime(int n) {
+        if (n == TWO) {
+            return true;
+        }
+        
+        if (n < TWO || MyMathUtil.isEven(n)) {
+            return false;
+        }
+        
+        for(int i = 3; i <= Math.sqrt(n); i += TWO) {
+            if (MyMathUtil.isDivisible(n, i)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

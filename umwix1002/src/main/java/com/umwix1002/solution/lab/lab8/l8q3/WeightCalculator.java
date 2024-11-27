@@ -3,6 +3,9 @@ package com.umwix1002.solution.lab.lab8.l8q3;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import static com.umwix1002.solution.lab.constants.CommonConstant.HUNDRED;
+import static com.umwix1002.solution.lab.constants.CommonConstant.TEN;
+
 /**
  * @author Ng Zhi Yang
  */
@@ -13,6 +16,6 @@ public class WeightCalculator {
     private int age;
 
     public double getRecWeight() {
-        return ((height - 100) + ((double) age / 10)) * 0.9;
+        return ((height - HUNDRED) + ((double) age / TEN)) * 0.9;
     }
 }

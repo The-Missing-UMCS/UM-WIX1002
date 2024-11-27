@@ -7,13 +7,13 @@ import java.util.Random;
 import java.util.stream.IntStream;
 
 /**
- * The {@code Number} class is designed to encapsulate properties related to an array of integers.
+ * The {@code Number} class is designed to encapsulate properties related to an array fromProperty integers.
  * It takes parameters from the {@code NumberProperty} and generates an int[] array based on these parameters.
  *
  * <p>Key Features:</p>
  * <ul>
  *     <li>The class uses a property-based approach where all properties can be set at once using the {@code setProperty} method.</li>
- *     <li>The fields of the {@code Number} class cannot be set independently; they must be set through the {@code NumberProperty}.</li>
+ *     <li>The fields fromProperty the {@code Number} class cannot be set independently; they must be set through the {@code NumberProperty}.</li>
  *     <li>Each time the properties are set, the int[] array is regenerated using Java's {@code IntStream}.</li>
  * </ul>
  *
@@ -28,7 +28,7 @@ import java.util.stream.IntStream;
  * <p>Example Usage:</p>
  * <pre>
  * NumberProperty numberProperty = new NumberProperty(10, 100, 1, false);
- * Number number = Number.of(numberProperty);
+ * Number number = Number.fromProperty(numberProperty);
  * </pre>
  *
  * @author Ng Zhi Yang
@@ -54,11 +54,18 @@ public class Number {
         this.numbers = numbers;
     }
     
+    /**
+     * Sets the properties of the {@code Number} object using the provided {@code NumberProperty}.
+     * This method will regenerate the int[] array based on the new properties.
+     *
+     * @param numberProperty The {@code NumberProperty} object containing the new properties.
+     * @throws IllegalArgumentException If the size is less than 1 or if the upperBound is less than the lowerBound.
+     */
     public void setProperty(NumberProperty numberProperty) {
         init(this, numberProperty);
     }
     
-    public static Number of(NumberProperty numberProperty) {
+    public static Number fromProperty(NumberProperty numberProperty) {
         Number number = new Number();
         init(number, numberProperty);
         return number;

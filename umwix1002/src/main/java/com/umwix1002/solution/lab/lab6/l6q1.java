@@ -37,7 +37,7 @@ public class l6q1 {
      * @throws com.umwix1002.solution.lab.util.exception.NegativeValueException if n is not a positive integer
      */
     public static int triangular(int n) {
-        AssertUtil.assertNatural(n);
+        AssertUtil.assertPositive(n);
         return n * (n + ONE) / TWO;
     }
 }

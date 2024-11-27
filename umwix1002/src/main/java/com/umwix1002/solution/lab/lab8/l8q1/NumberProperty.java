@@ -1,5 +1,7 @@
 package com.umwix1002.solution.lab.lab8.l8q1;
 
+import com.umwix1002.solution.lab.util.AssertUtil;
+import com.umwix1002.solution.lab.util.MyMathUtil;
 import lombok.Builder;
 import lombok.Data;
 
@@ -33,6 +35,9 @@ public class NumberProperty {
     private int lowerBound;
     private boolean isDuplicateAllowed;
 
+    /**
+     * To customize the default value for the builder when using @Builder annotation.
+     */
     public static class NumberPropertyBuilder {
         private int size = DEFAULT_SIZE;
         private int upperBound = DEFAULT_UPPER_BOUND;
@@ -46,8 +51,7 @@ public class NumberProperty {
     }
     
     private void checkParams() {
-        if (size < 0 || upperBound < lowerBound) {
-            throw new IllegalArgumentException("Invalid parameters");
-        }
+        AssertUtil.assertNonNegative(size);
+        AssertUtil.assertTrue(upperBound >= lowerBound);
     }
 }

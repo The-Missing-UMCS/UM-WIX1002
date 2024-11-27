@@ -3,12 +3,14 @@ package com.umwix1002.solution.lab.lab8.l8q5;
 import com.umwix1002.solution.lab.constants.CommonConstant;
 import lombok.Data;
 
+import static com.umwix1002.solution.lab.constants.CommonConstant.*;
+
 /**
  * @author Ng Zhi Yang
  */
 @Data
 public class Game {
-    private static final int DEFAULT_TARGET_POINTS = 100;
+    private static final int DEFAULT_TARGET_POINTS = HUNDRED;
     
     private Player one;
     private Player two;
@@ -20,8 +22,8 @@ public class Game {
     }
     
     public void start() {
-        boolean isOneTurn = (int) (Math.random() + 1) == 1;
-        int p1 = CommonConstant.ZERO, p2 = CommonConstant.ZERO;
+        boolean isOneTurn = (int) (Math.random() + ONE) == ONE;
+        int p1 = ZERO, p2 = ZERO;
         
         while (Math.max(p1, p2) < targetPoints) {
             if (isOneTurn) {
