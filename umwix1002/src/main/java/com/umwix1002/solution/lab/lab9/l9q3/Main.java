@@ -3,11 +3,14 @@ package com.umwix1002.solution.lab.lab9.l9q3;
 import com.umwix1002.solution.lab.Properties;
 import com.umwix1002.solution.lab.lab7.helper.Gender;
 import com.umwix1002.solution.lab.lab9.l9q2.Student;
+import com.umwix1002.solution.lab.util.TableUtil;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.umwix1002.solution.lab.Properties.*;
 
 /**
  * @author Ng Zhi Yang
@@ -15,9 +18,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws Exception {
         List<Lecture> lectures = new ArrayList<>();
-        String file = Properties.PROJECT_ROUTE + "/lab9/io_files/lecture.txt";
+        String file = chainDir(LAB9, IO_FILES, txt("lecture"));
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            String code = "";
+            String code;
             while((code = reader.readLine()) != null) {
                 lectures.add(new Lecture(code, reader.readLine(),
                     Integer.parseInt(reader.readLine()),
@@ -26,8 +29,7 @@ public class Main {
                     Integer.parseInt(reader.readLine())));
             }
         }
-        Lecturer lecturer = new Lecturer("Jane", Gender.FEMALE, "2024-08-12", lectures);
-        System.out.println(lecturer);
-        lecturer.getLectures().forEach(System.out::println);
+        String[] headers = {"Course Code", "Course Name", "Session", "Semester", "Credit Hour", "Student Count"};
+        TableUtil.printTableWithRawData(headers, lectures);
     }
 }

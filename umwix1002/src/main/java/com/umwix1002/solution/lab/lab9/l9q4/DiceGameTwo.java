@@ -12,31 +12,19 @@ public class DiceGameTwo extends DiceGame {
     public void notifyTakeTurn(DicePlayer player) {
         int tmp = player.getPoints();
 
-        if (player.rollDice() == DEFAULT_DICE_SIDES) {
-            if (player.rollDice() == DEFAULT_DICE_SIDES) {
-                player.setPoints(tmp);
-            }
+        if (player.rollDice() == DEFAULT_DICE_SIDES && player.rollDice() == DEFAULT_DICE_SIDES) {
+            player.setPoints(tmp);
         }
 
         if (player.getPoints() > DEFAULT_TARGET_SCORE) {
             player.setPoints(tmp);
         }
-        
-        System.out.printf("%s's points = %d\n", player, player.getPoints());
     }
 
     @Override
-    public void gamePlay() {
-        boolean isOneTurn = true;
-        while(true) {
-            DicePlayer currentPlayer = isOneTurn ? one : two;
-            notifyTakeTurn(currentPlayer); 
-            if (currentPlayer.getPoints() == DEFAULT_TARGET_SCORE) {
-                break;
-            }
-            isOneTurn = !isOneTurn;
-        }
-        System.out.printf("%s won!\n", (one.getPoints() == DEFAULT_TARGET_SCORE) ? one : two);
+    public boolean hasWon(DicePlayer player) {
+        return player.getPoints() == DEFAULT_TARGET_SCORE;
     }
+
 
 }

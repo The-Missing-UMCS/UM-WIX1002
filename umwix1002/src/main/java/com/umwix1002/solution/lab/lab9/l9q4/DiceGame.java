@@ -9,7 +9,26 @@ public abstract class DiceGame {
     
     protected DicePlayer one;
     protected DicePlayer two;
-    
+
+    public void gamePlay() {
+        boolean isOneTurn = true;
+        while(true) {
+            DicePlayer currentPlayer = isOneTurn ? one : two;
+            notifyTakeTurn(currentPlayer);
+            System.out.printf("%s's points = %d\n", currentPlayer, currentPlayer.getPoints());
+            if (hasWon(currentPlayer)) {
+                break;
+            }
+            isOneTurn = !isOneTurn;
+        }
+        System.out.printf("%s won!\n", (hasWon(one)) ? one : two);
+    }
+
+    protected int rollDice() {
+        return (int)(Math.random() * DEFAULT_DICE_SIDES + 1);
+    }
+
     abstract void notifyTakeTurn(DicePlayer player);
-    abstract void gamePlay();
+
+    abstract boolean hasWon(DicePlayer player);
 }

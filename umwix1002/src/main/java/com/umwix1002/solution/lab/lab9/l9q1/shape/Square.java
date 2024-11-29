@@ -9,18 +9,31 @@ import lombok.*;
 
 @Getter
 @Setter
-@ToString(callSuper = true)
-public class Square extends Shape {
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public class Square implements Shape {
     private double side;
-    
-    Square(double side) {
-        super(ShapeConstant.SQUARE);
-        this.side = side;
+
+    /**
+     * Create a square with a side
+     * @param side the side of the square
+     * @return the square
+     */
+    public static Square withSide(double side) {
+        return new Square(side);
     }
-    
+
     @Override
-    protected void compute() {
-        setArea(side * side);
-        setPerimeter(4 * side);
+    public double getPerimeter() {
+        return 4 * side;
+    }
+
+    @Override
+    public double getArea() {
+        return side * side;
+    }
+
+    @Override
+    public String getShapeType() {
+        return ShapeConstant.SQUARE;
     }
 }

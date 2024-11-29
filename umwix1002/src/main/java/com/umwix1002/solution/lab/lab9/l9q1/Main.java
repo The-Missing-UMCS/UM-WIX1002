@@ -6,18 +6,22 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Circle circle = ShapeBuilders.circle(5.0);
-        Rectangle rectangle = ShapeBuilders.rectangle(4, 6);
-        Square square = ShapeBuilders.square(5);
+        Circle circle = Circle.withRadius(3);
+        Rectangle rectangle = Rectangle.withWidthAndHeight(4, 6);
+        Square square = Square.withSide(5);
         
         Shape[] shapes = {circle, rectangle, square};
-        Arrays.stream(shapes).forEach(System.out::println);
+        Arrays.stream(shapes).forEach(shape -> System.out.println(toString(shape)));
         
         circle.setDiameter(10.0);
         rectangle.setWidth(8);
         rectangle.setHeight(10);
         square.setSide(7);
 
-        Arrays.stream(shapes).forEach(System.out::println);
+        Arrays.stream(shapes).forEach(shape -> System.out.println(toString(shape)));
+    }
+
+    private static String toString(Shape shape) {
+        return shape.getShapeType() + " Perimeter: " + shape.getPerimeter() + " Area: " + shape.getArea();
     }
 }
