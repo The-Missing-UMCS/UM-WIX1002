@@ -85,28 +85,58 @@ public class SubstitutionCipher implements MessageCipher {
     }
 
     /**
-     * Encodes a single character by shifting it forward in the alphabet by the given shift key.
-     * Wraps around if the end of the alphabet is reached.
-     *
+     * Encodes a character by shifting it forward in the alphabet by the given shift key.
+     * If the end of the alphabet is reached, it wraps around.
+     * <p>
+     * The formula {@code (((int) ch + shiftKey - startKey) % NUM_OF_ALPHABET)} calculates the new ASCII value
+     * of the character after shifting. The modulo operation ensures the result stays within the valid range of the alphabet.
+     * <p>
+     * For example:
+     * <pre>
+     *     - If `ch` is 'A' (ASCII 65) and `shiftKey` is 3, the new character is 'D' (ASCII 68).
+     *     - If `ch` is 'Z' (ASCII 90) and `shiftKey` is 2, the new character is 'B' (ASCII 66).
+     * </pre>
+     * <p>
+     * The subtraction of {@code ((int) ch + shiftKey - startKey) / NUM_OF_ALPHABET} deals with the edge cases.
      * @param ch the character to encode.
-     * @param shiftKey the number of positions to shift.
-     * @param startKey the ASCII value of the start of the alphabet (uppercase or lowercase).
+     * @param shiftKey the number of positions to shift (can be positive or negative).
+     * @param startKey the ASCII value of the start of the alphabet ('A' for uppercase, 'a' for lowercase).
      * @return the encoded character.
      */
     private char encode(char ch, int shiftKey, int startKey) {
         return (char) (((int) ch + shiftKey - startKey) % NUM_OF_ALPHABET + startKey - ((int) ch + shiftKey - startKey) / NUM_OF_ALPHABET);
     }
 
+
     /**
-     * Decodes a single character by shifting it backward in the alphabet by the given shift key.
+     * Decodes a character by shifting it backward in the alphabet by the given shift key.
      * Wraps around if the beginning of the alphabet is reached.
+     * <p>
+     * The {@code endKey} is the ASCII value of the uppercase 'Z' or lowercase 'z', depending on the case of the input character.
+     * <p>
+     * For example, if {@code ch} is 'D' (ASCII 68) and {@code shiftKey} is 3, the decoded character will be 'A' (ASCII 65).</li>
+     * <p>
+     * The decoding formula is:
+     * <pre>
+     * {@code endKey - ((endKey - (int) ch + shiftKey) % NUM_OF_ALPHABET)}
+     * </pre>
+     * This ensures that after shifting backward by {@code shiftKey}, the result stays within the valid range of the alphabet.
+     * <p>
+     * Example Calculation:
+     * <p>
+     * - For 'D' (ASCII 68) with a shift of 3, the formula becomes:
+     * <pre>
+     * {@code 90 - ((90 - 68 + 3) % 26) = 90 - (25 % 26) = 90 - 25 = 65}
+     * </pre>
+     * This results in 'A' (ASCII 65).
      *
      * @param ch the character to decode.
-     * @param shiftKey the number of positions to shift backward.
-     * @param endKey the ASCII value of the end of the alphabet (uppercase or lowercase).
+     * @param shiftKey the number of positions to shift backward (can be positive or negative).
+     * @param endKey the ASCII value of the end of the alphabet ('Z' for uppercase, 'z' for lowercase).
      * @return the decoded character.
      */
     private char decode(char ch, int shiftKey, int endKey) {
-        return (char) (endKey - (endKey - (int) ch + shiftKey) % NUM_OF_ALPHABET);
+        return (char) (endKey - ((endKey - (int) ch + shiftKey) % NUM_OF_ALPHABET));
     }
+
 }
