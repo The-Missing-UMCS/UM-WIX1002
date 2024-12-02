@@ -47,6 +47,18 @@ public class AssertUtil {
         }
     }
 
+    public static void isNotNull(Object obj) {
+        assertTrue(obj != null, "obj is null!", IllegalArgumentException.class);
+    }
+
+    public static void isNotNull(Object obj, String message) {
+        assertTrue(obj != null, message, IllegalArgumentException.class);
+    }
+
+    public static void isNotNull(Object obj, String message, Class<? extends Exception> exceptionClass) {
+        assertTrue(obj != null, message, exceptionClass);
+    }
+
     /**
      * Asserts that the specified long value is greater than or equal to zero.
      *

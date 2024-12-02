@@ -2,6 +2,7 @@ package com.umwix1002.solution.lab.lab10.l10q1.domain;
 
 import com.umwix1002.solution.lab.lab10.l10q1.enums.EmployeeTypeEnum;
 import com.umwix1002.solution.lab.lab10.l10q1.enums.PermanentCategoryEnum;
+import com.umwix1002.solution.lab.util.AssertUtil;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,23 +16,23 @@ import java.util.Optional;
 public class PermanentEmployee extends Employee {
     private PermanentCategoryEnum category;
     
-    public PermanentEmployee(String name, PermanentCategoryEnum category) {
-        super(EmployeeTypeEnum.PERMANENT, name);
+    private PermanentEmployee(String name, PermanentCategoryEnum category) {
+        super(name);
         this.category = category;
     }
-    
-    public PermanentEmployee(String name, char category) {
-        this(name, PermanentCategoryEnum.getByCode(category));
-        validate(this);
+
+    public static PermanentEmployee of(String name, PermanentCategoryEnum category) {
+        return new PermanentEmployee(name, category);
     }
-    
-    private static void validate(PermanentEmployee permanentEmployee) {
-        Optional.ofNullable(permanentEmployee.getCategory())
-            .orElseThrow(() -> new IllegalArgumentException("Invalid category code"));
+
+    public static PermanentEmployee of(String name, char category) {
+        PermanentCategoryEnum categoryEnum = PermanentCategoryEnum.getByCode(category);
+        AssertUtil.isNotNull(categoryEnum, "Invalid category code");
+        return of(name, categoryEnum);
     }
 
     @Override
-    public Double getSalary() {
-        return category.getSalary();
+    public EmployeeTypeEnum getEmployeeType() {
+        return EmployeeTypeEnum.PERMANENT;
     }
 }

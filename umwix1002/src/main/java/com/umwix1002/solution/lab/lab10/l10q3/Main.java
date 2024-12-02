@@ -1,6 +1,6 @@
 package com.umwix1002.solution.lab.lab10.l10q3;
 
-import com.umwix1002.solution.lab.lab10.l10q2.MessageEncoder;
+import com.umwix1002.solution.lab.lab10.l10q2.MessageCipher;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -19,7 +19,7 @@ public class Main {
     private static final String DECODE_TO = chainDir(LAB10, IO_FILES, "l10q3_decode_to");
     
     public static void main(String[] args) throws Exception {
-        MessageEncoder shuffleCipher = new ShuffleCipher();
+        MessageCipher shuffleCipher = new ShuffleCipher();
 
         try (
             BufferedReader br = new BufferedReader(new FileReader(ENCODE_FROM));

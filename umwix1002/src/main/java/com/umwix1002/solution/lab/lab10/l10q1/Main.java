@@ -13,11 +13,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Employee> employees = List.of(
-            new PermanentEmployee("Employee 1", 'A'),
-            new ContractStaff("Employee 2", 300),
-            new TemporaryStaff("Employee 3", 100)
+            PermanentEmployee.of("Employee 1", 'A'),
+            ContractStaff.of("Employee 2", 300),
+            TemporaryStaff.of("Employee 3", 100)
         );
-        
         employees.forEach(System.out::println);
     }
 }

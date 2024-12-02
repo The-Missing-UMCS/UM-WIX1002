@@ -1,5 +1,6 @@
 package com.umwix1002.solution.lab.util;
 
+import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,14 +16,14 @@ public class PropertiesUtil {
     public static final Properties PROPERTIES = new Properties();
     private static boolean isLoaded = false;
 
-    public static Optional<String> read(String file, String key)  {
+    public static @Nullable String read(String file, String key)  {
         try {
             if (!isLoaded) {
                 load(file);
             }
-            return Optional.ofNullable(PROPERTIES.getProperty(key));
+            return PROPERTIES.getProperty(key);
         } catch (IOException e) {
-            return Optional.empty();
+            return null;
         }
     }
 

@@ -1,13 +1,9 @@
 package com.umwix1002.solution.lab.lab10.l10q1.domain;
 
-import com.umwix1002.solution.lab.lab10.config.Constants;
+import com.umwix1002.solution.lab.lab10.l10q1.helper.SalaryFacade;
 import com.umwix1002.solution.lab.lab10.l10q1.enums.EmployeeTypeEnum;
-import com.umwix1002.solution.lab.util.PropertiesUtil;
 import lombok.Getter;
 import lombok.Setter;
-
-import static com.umwix1002.solution.lab.lab10.config.Constants.PROPERTY_FILE_PATH;
-import static com.umwix1002.solution.lab.lab10.config.Constants.TEMPORARY_STAFF_PAY_RATE;
 
 /**
  * @author Ng Zhi Yang
@@ -17,14 +13,17 @@ import static com.umwix1002.solution.lab.lab10.config.Constants.TEMPORARY_STAFF_
 public class TemporaryStaff extends Employee {
     private double totalHours;
     
-    public TemporaryStaff(String name, double totalHours) {
-        super(EmployeeTypeEnum.TEMPORARY, name);
+    private TemporaryStaff(String name, double totalHours) {
+        super(name);
         this.totalHours = totalHours;
     }
-    
+
+    public static TemporaryStaff of(String name, double totalHours) {
+        return new TemporaryStaff(name, totalHours);
+    }
+
     @Override
-    public Double getSalary() {
-        final double payRate = Double.parseDouble(PropertiesUtil.read(PROPERTY_FILE_PATH, TEMPORARY_STAFF_PAY_RATE).orElse("0"));
-        return payRate * totalHours;
+    public EmployeeTypeEnum getEmployeeType() {
+        return EmployeeTypeEnum.TEMPORARY;
     }
 }

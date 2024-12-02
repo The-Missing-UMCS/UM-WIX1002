@@ -1,7 +1,7 @@
 package com.umwix1002.solution.lab.lab10.l10q3;
 
 import com.umwix1002.solution.lab.constants.CommonConstant;
-import com.umwix1002.solution.lab.lab10.l10q2.MessageEncoder;
+import com.umwix1002.solution.lab.lab10.l10q2.MessageCipher;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,7 +13,7 @@ import static com.umwix1002.solution.lab.constants.CommonConstant.*;
  * @author Ng Zhi Yang
  */
 @Getter @Setter
-public class ShuffleCipher implements MessageEncoder {
+public class ShuffleCipher implements MessageCipher {
     private static final Integer DEFAULT_SHUFFLE_COUNT = 3;
     
     private Integer shuffleCount;
