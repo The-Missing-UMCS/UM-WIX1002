@@ -1,12 +1,11 @@
 {
-  "type": "module",
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "husky": "^9.1.7"
   },
   "scripts": {
-    "prepare": "husky",
+    "prepare": "husky install",
     "commitlint": "commitlint --edit"
   }
 }

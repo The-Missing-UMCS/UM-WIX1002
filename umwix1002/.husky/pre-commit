@@ -1,1 +1,1 @@
-npm test
+npx --no -- commitlint --edit \$1" > .husky/commit-msg
