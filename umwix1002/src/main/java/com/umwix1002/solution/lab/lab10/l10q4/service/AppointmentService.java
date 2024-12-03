@@ -1,6 +1,8 @@
 package com.umwix1002.solution.lab.lab10.l10q4.service;
 
 import com.umwix1002.solution.lab.lab10.l10q4.domain.Appointment;
+import com.umwix1002.solution.lab.lab10.l10q4.domain.AppointmentDto;
+import com.umwix1002.solution.lab.lab10.l10q4.util.AppointmentConverter;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDateTime;
@@ -9,22 +11,21 @@ import java.util.List;
 
 import static com.umwix1002.solution.lab.constants.CommonConstant.ZERO;
 
+/**
+ * @author Ng Zhi Yang
+ */
 @AllArgsConstructor
 public class AppointmentService {
     private List<Appointment> appointments;
-
-    // ID
-    public boolean makeAppointment(int year, int month, int day, int startTime, int endTime) {
-        LocalDateTime newStartTime = LocalDateTime.of(year, month, day, startTime, ZERO);
-        LocalDateTime newEndTime = LocalDateTime.of(year, month, day, endTime, ZERO);
-
+    
+    public boolean makeAppointment(AppointmentDto appointmentDto) {
         for (Appointment a : appointments) {
-            if (a.search(newStartTime, newEndTime)) {
+            boolean isClashed = a.search(appointmentDto.getStart(), appointmentDto.getEnd());
+            if (isClashed) {
                 return false;
             }
         }
-
-        appointments.add(new Appointment(newStartTime, newEndTime));
+        appointments.add(AppointmentConverter.fromDto(appointmentDto));
         Collections.sort(appointments);
 
         return true;
@@ -35,8 +36,9 @@ public class AppointmentService {
     }
 
     public void doneAppointment(int n) {
-        for (int i = ZERO; i < n; i++)
+        for (int i = ZERO; i < n; i++) {
             appointments.removeFirst();
+        }
     }
 
     public void removeAppointment(Appointment appointment) {

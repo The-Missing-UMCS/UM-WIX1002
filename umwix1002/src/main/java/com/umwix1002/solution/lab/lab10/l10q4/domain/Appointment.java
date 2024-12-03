@@ -1,11 +1,15 @@
 package com.umwix1002.solution.lab.lab10.l10q4.domain;
 
+import com.umwix1002.solution.lab.util.AssertUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 
 import java.time.LocalDateTime;
 
+/**
+ * @author Ng Zhi Yang
+ */
 @Data
 @AllArgsConstructor
 public class Appointment implements Searchable, Comparable<Appointment> {
@@ -14,6 +18,8 @@ public class Appointment implements Searchable, Comparable<Appointment> {
 
     @Override
     public boolean search(@NotNull LocalDateTime dateStartTime, @NotNull LocalDateTime dateEndTime) {
+        AssertUtil.isNotNull(dateStartTime, "Date start time cannot be null");
+        AssertUtil.isNotNull(dateEndTime, "Date end time cannot be null");
         return start.isBefore(dateEndTime) && end.isAfter(dateStartTime);
     }
 

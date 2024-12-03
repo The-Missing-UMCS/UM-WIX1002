@@ -11,6 +11,9 @@ import java.util.List;
 import static com.umwix1002.solution.lab.constants.CommonConstant.*;
 import static com.umwix1002.solution.lab.constants.ConsoleConstants.*;
 
+/**
+ * @author Ng Zhi Yang
+ */
 public class ConsoleLogger {
     private static final int SIZE_1 = 14;
     private static final int SIZE_2 = 14;
