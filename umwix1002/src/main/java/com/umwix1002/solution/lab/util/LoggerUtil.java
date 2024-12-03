@@ -1,4 +1,4 @@
-package com.umwix1002.solution.lab.lab10.l10q4.util;
+package com.umwix1002.solution.lab.util;
 
 import static com.umwix1002.solution.lab.constants.ConsoleConstants.*;
 

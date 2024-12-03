@@ -5,7 +5,7 @@ import com.umwix1002.solution.lab.lab10.l10q4.domain.Appointment;
 import com.umwix1002.solution.lab.lab10.l10q4.domain.AppointmentDto;
 import com.umwix1002.solution.lab.lab10.l10q4.service.AppointmentService;
 import com.umwix1002.solution.lab.lab10.l10q4.util.AppointmentConverter;
-import com.umwix1002.solution.lab.lab10.l10q4.util.LoggerUtil;
+import com.umwix1002.solution.lab.util.LoggerUtil;
 import com.umwix1002.solution.lab.util.FileUtil;
 import com.umwix1002.solution.lab.util.TableUtil;
 
