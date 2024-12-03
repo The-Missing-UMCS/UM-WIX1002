@@ -1,4 +1,4 @@
-package com.umwix1002.solution.lab.lab10.l10q4.util.converter;
+package com.umwix1002.solution.lab.util.converter;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
