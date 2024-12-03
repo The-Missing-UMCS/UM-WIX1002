@@ -16,6 +16,7 @@ import static com.umwix1002.solution.lab.constants.CommonConstant.BLANK;
 /**
  * Utility class for printing tables in a formatted manner using ASCII art.
  * It also includes methods for extracting data from objects and converting headers to field names.
+ * @author Ng Zhi Yang
  */
 public class TableUtil {
 
