@@ -1,0 +1,5 @@
+Job Name,Partition,Memory,QoS
+Job2,gpu-a100,8GB,long
+Job4,cpu-epyc-genoa,8GB,long
+Job3,gpu-v100s,16GB,debug
+Job1,cpu-epyc-genoa,4GB,normal

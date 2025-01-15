@@ -1,0 +1,4 @@
+James Bond,F,43,No. 67 Jalan BP10/12 Kelang
+Madeleine,M,36, No. 67Jalan BP 10 / 12 Kelang
+Evelyn Wang,F,57,12 Jalan PM10 Bandar Baru Sepang
+WaymondWang,M,49,12 Jalan pm 10 bandarbarusepang

@@ -1,0 +1,10 @@
+John Doe,85
+Jane Smith,92
+Tom Johnson,-1
+Emily Davis,78
+Michael Brown,64
+Jessica Wilson,-1
+David Lee,55
+Sarah Lewis,73
+Robert Walker,88
+Chewbacca Chewy,-1

@@ -1,0 +1,15 @@
+XOX
+OOX
+XXO
+#
+X.X
+OOO
+X..
+#
+XOX
+OXO
+OXX
+#
+X..
+O..
+...
