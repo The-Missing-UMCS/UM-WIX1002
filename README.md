@@ -104,6 +104,8 @@ For newcomers: You may encounter unfamiliar syntax like List, Set, Map, Stream, 
 
 Remember, every great programmer started where you are now. Keep learning, experimenting, and growing. If you have questions, I’m always here to help at 017-780 9298 (WhatsApp/Telegram).
 
+Oh, I’ve been using commitlint to standardize my commit messages. To try it out, install Node.js, run npm i to install dependencies, and give it a shot.
+
 Good luck. You are amazing, and your journey is just beginning.
 
 
