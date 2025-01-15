@@ -1,5 +1,0 @@
-SK079,Dettol Natural,4.99
-SK013,100 Plus,6.49
-SK088,Jasmine Pearl,37.99
-SK042,Ayamas Nuget Crispy,9.99
-SK066,Ali Cafe,8.99
