@@ -57,7 +57,7 @@ Here are some useful Git commands:
 - `git push origin <branch>`: Push changes to the remote repository
 - `git status`: Displays the state of the working directory and the staging area.
 
-For more information, watch Lecture 6: Version Control (Git) from MIT’s Missing Semester Course or read Pro Git. [ChatGPT](https://chatgpt.com/) can also be a quick reference.
+For more information, watch Lecture 6: Version Control (Git) from MIT’s Missing Semester Course or read Pro Git. [ChatGPT](https://chatgpt.com/) can also be a quick reference. Refer to [Git Beginner Guide](https://github.com/The-Missing-UMCS/UM-WIX1002/blob/refactor/GitBeginnerGuide.md) if you wish.
 
 ## 5. My Journey with FOP
 
