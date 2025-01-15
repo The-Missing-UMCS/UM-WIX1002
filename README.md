@@ -1,6 +1,4 @@
-# README
-
-🌱 WIX1002 - Include notes, questions, source code and explanation for Tutorials/ Labs (UM-WIX1002).
+# Read this if you are new to this Git Repository
 
 ## Content
 
@@ -83,7 +81,7 @@ Here are some of the useful git commands:
 
 ## Fun Story
 
-Recentlt, I have lost every Lab and Tutorial in Eclipse. I just found it on Wednesday night (14/12/2022). Even more heartbreakingly, I didn't have any copy of them. Therefore, ***I HAVE TO REDO ALL OF THEM***, besides the one I've pushed to Gitlab/ Github (i.e Lab1 ~ Lab6), .
+Recently, I have lost every Lab and Tutorial in Eclipse. I just found it on Wednesday night (14/12/2022). Even more heartbreakingly, I didn't have any copy of them. Therefore, ***I HAVE TO REDO ALL OF THEM***, besides the one I've pushed to Gitlab/ Github (i.e Lab1 ~ Lab6), .
 
 Lab question is freakingly difficult. Problem Solving 3 is also the same.
 
