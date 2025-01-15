@@ -1,6 +1,6 @@
-# ⚠️⚠ Must-Read: Don’t Miss Out or You’ll Regret It!
+# ⚠️ Must-Read: Don’t Miss Out or You’ll Regret It!
 
-This repository contains a range of study materials for the WIX1002 (Data Structure) course.
+This repository contains a range of study materials for the WIX1002 (Fundamental of Programming) course.
 
 WIX1002 is offered by the Faculty of Computer Science and Information Technology (FCSIT) at the Universiti Malaya (UM) in Malaysia. Here, you will find notes, questions, source code, and detailed explanations for Tutorials and Labs (UM-WIX1002) that accompany the course.
 
