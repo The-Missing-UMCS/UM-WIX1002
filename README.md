@@ -1,4 +1,4 @@
-# ⚠️⚠ Must-Read: Don’t Miss Out or You’ll Regret It!
+# ⚠️ Must-Read: Don’t Miss Out or You’ll Regret It!
 
 This repository contains a range of study materials for the WIX1002 (Data Structure) course.
 
