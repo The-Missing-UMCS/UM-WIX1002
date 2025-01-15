@@ -1,0 +1,5 @@
+SK079,Dettol Natural,20
+SK013,100 Plus,74
+SK088,Jasmine Pearl,27
+SK042,Ayamas Nuget Crispy,60
+SK066,Ali Cafe,79
