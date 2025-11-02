@@ -1,6 +1,6 @@
 package lab6;
 
-import com.umwix1002.solution.lab.lab6.l6q6;
+import com.umwix1002.solution.lab.lab06.l6q6b;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -16,7 +16,7 @@ class l6q6Test {
         "10, false"
     })
     void testIsPalindromicPrime(int input, boolean expected) {
-        assertEquals(expected, l6q6.isPalindromicPrime(input));
+        assertEquals(expected, l6q6b.isPalindromicPrime(input));
     }
 
     @ParameterizedTest
@@ -28,7 +28,7 @@ class l6q6Test {
         "10, false"
     })
     void testIsEmirp(int input, boolean expected) {
-        assertEquals(expected, l6q6.isEmirp(input));
+        assertEquals(expected, l6q6b.isEmirp(input));
     }
 
     @ParameterizedTest
@@ -40,7 +40,7 @@ class l6q6Test {
         "13, true"
     })
     void testIsPrime(int input, boolean expected) {
-        assertEquals(expected, l6q6.isPrime(input));
+        assertEquals(expected, l6q6b.isPrime(input));
     }
 
     @ParameterizedTest
@@ -52,7 +52,7 @@ class l6q6Test {
         "-121, false"
     })
     void testIsPalindromic(int input, boolean expected) {
-        assertEquals(expected, l6q6.isPalindromic(input));
+        assertEquals(expected, l6q6b.isPalindromic(input));
     }
 
     @ParameterizedTest
@@ -64,6 +64,6 @@ class l6q6Test {
         "4456, 6544"
     })
     void testReverse(int input, int expected) {
-        assertEquals(expected, l6q6.reverse(input));
+        assertEquals(expected, l6q6b.reverse(input));
     }
 }

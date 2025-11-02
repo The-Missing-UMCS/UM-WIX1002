@@ -34,16 +34,26 @@ public class Q4 {
 	
 	public static int[] countAll(String content) {
 		int[] count = new int[28];
+		// regular expression -> syntax \\. (special? normal?)
+		// My mom. I am a ... | \\. -> [My Mom.] [ I am a....], \\.(\\s)? -> [My Mom. ] [I am a...]
+		// My mom.I
 		String[] lines = content.split("\\.(\\s)?");
 		count[0] = lines.length;
+		// lines.split(" ").length = words My mom is a hero -> [My, mom, is, a, hero.]
 		
 		String[] words = content.toUpperCase().split(String.format("\\,?\\s?%s|(\\,)?\\s|(\\.)(\\s)?", System.lineSeparator()));
 		count[1] = words.length;
-		
+
+		int[] alphabetCount = new int[26];
+
 		
 		for(String word : words) {
 			for(char ch : word.toCharArray()) {
-				count[(int) ch - (int) 'A' + 2]++;
+//				count[(int) ch - (int) 'A' + 2]++;
+				if(ch >= 'A' || ch <= 'Z') {
+					alphabetCount[(int) ch - (int) 'A'] += 1;
+				}
+
 			}
 		}
 		

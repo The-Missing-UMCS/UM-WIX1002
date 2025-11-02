@@ -1,6 +1,6 @@
 package lab8.l8q1;
 
-import com.umwix1002.solution.lab.lab8.l8q1.NumberPresenter;
+import com.umwix1002.solution.lab.lab08.l8q1b.NumberPresenter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

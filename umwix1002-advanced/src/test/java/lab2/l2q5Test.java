@@ -1,6 +1,6 @@
 package lab2;
 
-import com.umwix1002.solution.lab.lab2.l2q5;
+import com.umwix1002.solution.lab.lab02.l2q5;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,6 +1,6 @@
 package lab6;
 
-import com.umwix1002.solution.lab.lab6.l6q1;
+import com.umwix1002.solution.lab.lab06.l6q1c;
 import com.umwix1002.solution.lab.util.exception.NegativeValueException;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -16,13 +16,13 @@ class l6q1Test {
         @ParameterizedTest
         @CsvSource({"3,6", "1,1", "9,45"})
         void testTriangularNormal(int val, int expected) {
-            assertEquals(expected, l6q1.triangular(val));
+            assertEquals(expected, l6q1c.triangular(val));
         }
 
         @ParameterizedTest
         @CsvSource({"0", "-6", "-10"})
         void testTriangularThrowErrors(int val) {
-            assertThatThrownBy(() -> l6q1.triangular(val))
+            assertThatThrownBy(() -> l6q1c.triangular(val))
                 .isInstanceOf(NegativeValueException.class);
         }
     }

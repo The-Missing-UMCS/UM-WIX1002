@@ -1,7 +1,7 @@
 package lab8.l8q2;
 
-import com.umwix1002.solution.lab.lab8.l8q2.BankAccount;
-import com.umwix1002.solution.lab.lab8.l8q2.InsufficientBalanceException;
+import com.umwix1002.solution.lab.lab08.l8q2.BankAccount;
+import com.umwix1002.solution.lab.lab08.l8q2.InsufficientBalanceException;
 import com.umwix1002.solution.lab.util.exception.NegativeValueException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

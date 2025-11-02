@@ -1,6 +1,6 @@
 package lab8.l8q3;
 
-import com.umwix1002.solution.lab.lab8.l8q4.Fraction;
+import com.umwix1002.solution.lab.lab08.l8q4.Fraction;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

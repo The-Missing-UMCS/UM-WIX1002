@@ -1,6 +1,6 @@
 package lab6;
 
-import com.umwix1002.solution.lab.lab6.l6q4;
+import com.umwix1002.solution.lab.lab06.l6q4;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

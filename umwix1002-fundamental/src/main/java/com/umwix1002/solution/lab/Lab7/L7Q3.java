@@ -4,7 +4,7 @@ import java.io.*;
 
 
 public class L7Q3 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		generateReverseTextFile(Generator.TEXT_FILE, Generator.ROOT + "Q3.txt");
 	}
 

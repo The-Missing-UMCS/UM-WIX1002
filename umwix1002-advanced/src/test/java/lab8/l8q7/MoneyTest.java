@@ -1,6 +1,6 @@
 package lab8.l8q7;
 
-import com.umwix1002.solution.lab.lab8.l8q7.Money;
+import com.umwix1002.solution.lab.lab08.l8q7.Money;
 import com.umwix1002.solution.lab.util.exception.NegativeValueException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

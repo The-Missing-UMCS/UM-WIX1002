@@ -1,8 +1,8 @@
 package lab9;
 
-import com.umwix1002.solution.lab.lab9.l9q1.shape.Circle;
-import com.umwix1002.solution.lab.lab9.l9q1.shape.Rectangle;
-import com.umwix1002.solution.lab.lab9.l9q1.shape.Square;
+import com.umwix1002.solution.lab.lab09.l9q1.shape.Circle;
+import com.umwix1002.solution.lab.lab09.l9q1.shape.Rectangle;
+import com.umwix1002.solution.lab.lab09.l9q1.shape.Square;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

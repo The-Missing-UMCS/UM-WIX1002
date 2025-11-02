@@ -1,6 +1,6 @@
 package lab8.l8q4;
 
-import com.umwix1002.solution.lab.lab8.l8q4.Fraction;
+import com.umwix1002.solution.lab.lab08.l8q4.Fraction;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
