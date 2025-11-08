@@ -11,7 +11,7 @@ public class l4q6 {
         System.out.println("Random number = " + randomNumber);
         for(int i = 0; randomNumber > 0; randomNumber /= 10, i++) {
             int digit = randomNumber % 10;
-            System.out.printf("%15d = %d\n", ((int) Math.pow(10, i)), digit);
+            System.out.printf("%15d = %d%n", ((int) Math.pow(10, i)), digit);
         }
     }
 }

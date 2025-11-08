@@ -6,17 +6,23 @@ import java.util.Scanner;
  * @author Ng Zhi Yang
  */
 public class l4q3a {
+
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int num, n = 0, sum = 0, squaredSum = 0, min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
-            while (true) {
+            for (; ; n++) {
                 System.out.print("Enter a score [negative score to quit]: ");
-                if ((num = sc.nextInt()) < 0) break;
+                if ((num = sc.nextInt()) < 0) {
+                    break;
+                }
                 sum += num;
-                squaredSum += num * num;
-                n++;
-                if (num < min) min = num;
-                if (num > max) max = num;
+                squaredSum += (int) Math.pow(num, 2);
+                if (num < min) {
+                    min = num;
+                }
+                if (num > max) {
+                    max = num;
+                }
             }
 
             double average = (double) sum / n;

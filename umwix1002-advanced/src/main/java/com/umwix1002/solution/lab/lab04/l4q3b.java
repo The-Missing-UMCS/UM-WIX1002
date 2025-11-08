@@ -8,6 +8,7 @@ import java.util.Scanner;
  * @author Ng Zhi Yang
  */
 public class l4q3b {
+
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             DescriptiveStatistics stats = new DescriptiveStatistics();
