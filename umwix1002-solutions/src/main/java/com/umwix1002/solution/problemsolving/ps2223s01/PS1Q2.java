@@ -1,4 +1,4 @@
-package com.umwix1002.solution.problemSolving.ps2223s01;
+package com.umwix1002.solution.problemsolving.ps2223s01;
 
 import java.util.Scanner;
 

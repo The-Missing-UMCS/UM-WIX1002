@@ -1,4 +1,4 @@
-package com.umwix1002.solution.problemSolving.ps2223s03.PS3Q2;
+package com.umwix1002.solution.problemsolving.ps2223s03.PS3Q2;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
