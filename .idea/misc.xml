@@ -8,6 +8,12 @@
         <option value="$PROJECT_DIR$/umwix1002-advanced/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/umwix1002-core/pom.xml" />
+        <option value="$PROJECT_DIR$/umwix1002-fundamental/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
