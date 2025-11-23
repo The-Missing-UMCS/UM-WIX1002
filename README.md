@@ -61,9 +61,9 @@ Oh, I’ve been using commitlint to standardize my commit messages. To try it ou
 
 Good luck. You are amazing, and your journey is just beginning.
 
-### 1.3.4. Year 4 (Last Updated: 23 November 2025)
+### 1.3. Year 4 (Last Updated: 23 November 2025)
 
-#### 1.3.4.1 Throw Back I: Why I'm creating this repository?
+#### 1.3.1. Throw Back I: Why I'm creating this repository?
 
 Time moves quietly, relentlessly, and almost imperceptibly, until one day you look back and realise just how far you've walked. It has been years since I first created this repository, and now, my heart swells with the feeling too complex to name. There is a soft ache in nostalgia, a gentle heaviness that rises when you finally bid farewell to something you’ve tended with curiosity, stubborn hope, and the patience of countless seasons. You watch it grow alongside you, and it becomes part of who you are.
 
@@ -81,7 +81,7 @@ What began as a personal exercise slowly transformed into something more compass
 
 A few friends later created their own repositories too. We studied each other's code, borrowed ideas, built on one another's logic. Looking back, those moments feel warm. A quite, little community forged not by formality, but by shared curiosity and youthful enthusiasm.
 
-#### 1.3.4.2 What Makes Me Revisit This Repository
+#### 1.3.2. What Makes Me Revisit This Repository
 
 If you've read Section 5.2.3, you might already sense the reasons pulling me back. I once thought refining everything would be easy, perhaps with a few touch-ups, some restructuring, maybe a weekend or two of work. But refactoring, as always, revealed itself to be harder than expected. Life moved faster than my plans: academic pressure, personal development, internship tasks, and the weight of the final-year project all collided at once.
 
@@ -113,7 +113,7 @@ Less is more.
 Clarity over complexity.
 Warmth over technical bravado.
 
-### 1.3.4.3. It Comes to An End
+### 1.3.3. It Comes to An End
 
 There’s a saying in Chinese: “Everything eventually reaches its end.”  Everything, no matter how precious, eventually reaches its end. So it is with my journey with FOP. 
 
