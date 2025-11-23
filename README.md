@@ -53,7 +53,7 @@ When I revisited my FOP code, I was shocked. It was messy, unorganized, and in d
 
 This journey has taught me so much. Not just about Java, but about the art of clean, readable, and efficient code. I’ve learned to appreciate the beauty of thoughtful design and the impact it can have on your work and mindset.
 
-For newcomers: You may encounter unfamiliar syntax like List, Set, Map, Stream, and Optional. Don’t let it intimidate you. With tools like ChatGPT, learning these concepts is easier than ever. Master them now because they’ll become invaluable in your FOP and Data Structure assignments (and later in your career).
+For newcomers: You may encounter unfamiliar syntax like `List`, `Set`, `Map`, `Stream`, and `Optional`. Don’t let it intimidate you. With tools like ChatGPT, learning these concepts is easier than ever. Master them now because they’ll become invaluable in your FOP and Data Structure assignments (and later in your career).
 
 Remember, every great programmer started where you are now. Keep learning, experimenting, and growing. If you have questions, I’m always here to help at 017-780 9298 (WhatsApp/Telegram).
 
@@ -77,7 +77,7 @@ But as semesters unfolded, something shifted. I began noticing how many of my pe
 
 There was no ChatGPT in 2022. No instant explanation. No fallback.
 
-What began as a personal exercise slowly transformed into something more compassionate—a small gesture to ease someone else’s struggle. And when I realised that even one person might benefit from what I posted, the pride I felt was genuine and unexpectedly meaningful. I wasn’t just coding anymore; I was helping.
+What began as a personal exercise slowly transformed into something more compassionate — a small gesture to ease someone else’s struggle. And when I realised that even one person might benefit from what I posted, the pride I felt was genuine and unexpectedly meaningful. I wasn’t just coding anymore; I was helping.
 
 A few friends later created their own repositories too. We studied each other's code, borrowed ideas, built on one another's logic. Looking back, those moments feel warm. A quite, little community forged not by formality, but by shared curiosity and youthful enthusiasm.
 
@@ -102,9 +102,9 @@ That’s how [_A Short Note: Git and GitHub_](https://docs.google.com/document/d
 
 And somewhere along the way, I realised something quietly beautiful: my old repository was no longer forgotten. They were using it quietly, in ways I never imagined. They might never star it or comment, but they returned to it when they needed help. And that, silent reliance reminded me that my work still mattered.
 
-In truth, I couldn't persuade myself to abandon the effort I had poured into this place. This repository grew with me through years and seasons, through triumphs and heartbreaks. and over those up and down. It knows how many hours I’ve spent on it—days, nights, entire evenings that slipped quietly away. And can I truly give it up? No. I admitted to myself: I must watch it grow and graduate, just as I have. I cannot break the promise I made to the younger version of me. He would never forgive me if I did.
+In truth, I couldn't persuade myself to abandon the effort I had poured into this place. This repository grew with me through years and seasons, through triumphs and heartbreaks. and over those up and down. It knows how many hours I’ve spent on it — days, nights, entire evenings that slipped quietly away. And can I truly give it up? No. I admitted to myself: I must watch it grow and graduate, just as I have. I cannot break the promise I made to the younger version of me. He would never forgive me if I did.
 
-Refactoring became easier once I found that purpose again. I realised how my earlier solutions had grown too advanced—filled with enums, Arrays.stream(), and Optional. Elegant, yes, but unkind to beginners. Splitting the repository into submodules only made navigation harder. So I rebuilt the entire experience: one unified repository, with multiple solutions for every question—from foundational to advanced. For Lab07 Question 5, for example, I included six solutions: from a simple array (l7q5a), to a matrix-based approach (l7q5b), all the way to a Stream-based solution (l7q5f). For anyone wanting to deepen their understanding of Java or functional programming, I prepared a gentle staircase—not a cliff.
+Refactoring became easier once I found that purpose again. I realised how my earlier solutions had grown too advanced—filled with enums, `Arrays.stream()`, and `Optional`. Elegant, yes, but unkind to beginners. Splitting the repository into submodules only made navigation harder. So I rebuilt the entire experience: one unified repository, with multiple solutions for every question—from foundational to advanced. For Lab07 Question 5, for example, I included six solutions: from a simple array (l7q5a), to a matrix-based approach (l7q5b), all the way to a `Stream`-based solution (l7q5f). For anyone wanting to deepen their understanding of Java or functional programming, I prepared a gentle staircase, not a cliff.
 
 To simplify further, I removed unnecessary tools like Husky and Docker. Beginners didn’t need noise. They needed clarity. This repository was never meant to show off industry-grade pipelines; it was meant to teach fundamentals.
 
@@ -117,7 +117,7 @@ Warmth over technical bravado.
 
 There’s a saying in Chinese: “Everything eventually reaches its end.”  Everything, no matter how precious, eventually reaches its end. So it is with my journey with FOP. 
 
-From here on, I will only maintain the repository lightly, perhaps adding FOP Final 2025/2026 solutions. After graduation, life will pull me toward new roads, new uncertainties, new beginnings. I may not look back as often as I once did. That's the nature of growth — we must sometimes leave behind the things we've built to make room for what comes next.
+From here on, I will only maintain the repository lightly, perhaps adding FOP Final 2025/2026 solutions. After graduation, life will pull me toward new roads, new uncertainties, new beginnings. I may not look back as often as I once did. That's the nature of growth. We must sometimes leave behind the things we've built to make room for what comes next.
 
 But I won’t archive this. Some things deserve to stay open, even if the world moves on. This repository is a small piece of who I was —— the hopeful Year 1 student, the tired Year 3 intern, the passionate Year 4 demonstrator. It carries my youth, my mistakes, my growth, and the quiet ways I once tried to help others. It carries memories of who I was, who I became, and the people I crossed paths with along the way.
 
@@ -126,7 +126,7 @@ And I want it to live on —— breathing, evolving —— even without me at th
 That is why I begin this chapter with my story.
 
 Because if you are reading this, chances are you’ve struggled too.
-And if you feel the same spark — the desire to help someone you may never meet — then this repository is waiting for you.
+And if you feel the same spark, i.e., the desire to help someone you may never meet, then this repository is waiting for you.
 
 Leave a comment. Fork it. Send a pull request.
 I will always welcome you here.
