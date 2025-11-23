@@ -3,11 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/umwix1002-advanced/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/umwix1002-advanced/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/umwix1002-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/umwix1002-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/umwix1002-fundamental/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/umwix1002-fundamental/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/umwix1002-solutions/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/umwix1002-solutions/src/main/resources" charset="UTF-8" />
   </component>
 </project>
