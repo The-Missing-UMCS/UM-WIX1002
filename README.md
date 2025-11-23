@@ -73,7 +73,7 @@ Little did I know it would become so much more.
 
 Back in Year 1, mastering Git/GitHub felk like unlocking a secret door. Hardly anyone around me knew these tools, and with the innocence of freshman, that small technical edge made me feel strangely confident.
 
-But as semesters unfolded, something shifted. I began noticing how many of my peers were struggling — not because they lacked potential, but because programming was so foreign to them. Some hadn't even chosen this path; the course had been assigned to them. And for many of us, FOP lab was brutal. Even now, as Year 4 student, I still believe that if I were to rewind back to Year 1 with today's mindset, FOP would feel like a mountain.
+But as semesters unfolded, something shifted. I began noticing how many of my peers were struggling. Not because they lacked potential, but because programming was so foreign to them. Some hadn't even chosen this path; the course had been assigned to them. And for many of us, FOP lab was brutal. Even now, as Year 4 student, I still believe that if I were to rewind back to Year 1 with today's mindset, FOP would feel like a mountain.
 
 There was no ChatGPT in 2022. No instant explanation. No fallback.
 
