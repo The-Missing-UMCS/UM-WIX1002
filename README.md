@@ -113,7 +113,7 @@ Less is more.
 Clarity over complexity.
 Warmth over technical bravado.
 
-### 1.3.3. It Comes to An End
+#### 1.3.3. It Comes to An End
 
 There’s a saying in Chinese: “Everything eventually reaches its end.”  Everything, no matter how precious, eventually reaches its end. So it is with my journey with FOP. 
 
