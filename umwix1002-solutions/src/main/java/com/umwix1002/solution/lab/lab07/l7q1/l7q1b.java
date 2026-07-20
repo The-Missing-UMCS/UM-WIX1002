@@ -1,5 +1,6 @@
 package com.umwix1002.solution.lab.lab07.l7q1;
 
+import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ public class l7q1b {
                     System.out.printf("Course Code: %s%nCourse Name: %s%n%n",
                         course.code(), course.name());
                 } else {
-                    System.out.println("The course doesn't exist.%n");
+                    System.out.println("The course doesn't exist.");
                 }
             }
         }
@@ -53,6 +54,8 @@ public class l7q1b {
                 String courseName = courseInfo[1];
                 courseList.add(new Course(courseCode, courseName));
             }
+        } catch (EOFException e) {
+            return courseList;
         }
         return courseList;
     }

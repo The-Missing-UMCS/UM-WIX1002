@@ -21,6 +21,7 @@ public class Number {
         this(size, upper, false);
     }
 
+    // AllArgsConstructor
     public Number(int size, int upper, boolean isDuplicate) {
         if (!isDuplicate) {
             var set = new HashSet<Integer>();

@@ -6,8 +6,8 @@ import java.nio.file.Paths;
 public class Properties {
 
     public static final String REPOSITORY_NAME = "umwix1002-solutions";
-    public static final String ROOT = chainDir(REPOSITORY_NAME,
-        "src/main/java/com/umwix1002/solution");
+
+    public static final String ROOT = chainDir("src/main/java/com/umwix1002/solution");
 
     // Different Solution Type
     public static final String PAST_YEAR = chainDir(ROOT, "pastyear");

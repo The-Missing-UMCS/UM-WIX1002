@@ -10,6 +10,7 @@ import static com.umwix1002.solution.Properties.*;
 public class l7q2a {
 
     public static void main(String[] args) throws Exception {
+        // Web scrapping
         try (
             InputStream inputStream = URI.create("https://fsktm.um.edu.my").toURL().openStream();
             Scanner scanner = new Scanner(inputStream);

@@ -25,8 +25,8 @@ public class Money {
         return this.valueCash;
     }
 
-    public static Money subtract(double value_one, double value_two) {
-        return new Money(Math.abs(value_one - value_two));
+    public static Money subtract(double v1, double v2) {
+        return new Money(Math.abs(v1 - v2));
     }
 
     public static Money subtract(Money one, Money two) {
